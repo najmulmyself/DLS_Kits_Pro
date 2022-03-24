@@ -16,33 +16,36 @@ class HomeScreen extends StatelessWidget {
                 Column(
                   children: [
                     GestureDetector(
-                        onTap: () {
-                          // Navigator.push(
-                          //   context,
-                          //   MaterialPageRoute(
-                          //     builder: (_) => KitPage(),
-                          //   ),
-                          // );
-                        },
-                        child: Image.asset('assets/images/Dream.png')),
+                      onTap: () {
+                        // Navigator.push(
+                        //   context,
+                        //   MaterialPageRoute(
+                        //     builder: (_) => KitPage(),
+                        //   ),
+                        // );
+                      },
+                      child: Image.asset('assets/images/0001.png'),
+                    ),
                     // SizedBox(
                     //   height: 20,
                     // ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Image.asset('assets/images/brazil.png'),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 8.0),
+                      child: Image.asset('assets/images/1.png'),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Image.asset('assets/images/brazil.png'),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 8.0),
+                      child: Image.asset('assets/images/2.png'),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Image.asset('assets/images/brazil.png'),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 8.0),
+                      child: Image.asset('assets/images/3.png'),
                     ),
                   ],
                 )
-              
               ],
             ),
           ),
