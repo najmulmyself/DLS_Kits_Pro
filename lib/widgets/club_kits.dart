@@ -7,6 +7,7 @@ class ClubKits extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.red.shade600,
         title: Text('Club Kits'),
       ),
       body: Column(

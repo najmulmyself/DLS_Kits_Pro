@@ -1,4 +1,5 @@
 import 'package:dls_kits_pro/widgets/club_kits.dart';
+import 'package:dls_kits_pro/widgets/national_kits.dart';
 import 'package:flutter/material.dart';
 
 // import 'kit_page.dart';
@@ -47,7 +48,16 @@ class HomeScreen extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.symmetric(
                           horizontal: 20, vertical: 8.0),
-                      child: Image.asset('assets/images/2.png'),
+                      child: GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (ctx) => NationalKits(),
+                              ),
+                            );
+                          },
+                          child: Image.asset('assets/images/2.png')),
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(
