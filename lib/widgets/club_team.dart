@@ -1,3 +1,4 @@
+import 'package:dls_kits_pro/widgets/club_teams/psg.dart';
 import 'package:flutter/material.dart';
 
 class ClubTeam extends StatelessWidget {
@@ -16,7 +17,16 @@ class ClubTeam extends StatelessWidget {
             Padding(
               padding:
                   const EdgeInsets.symmetric(horizontal: 20, vertical: 8.0),
-              child: Image.asset('assets/images/C1.png'),
+              child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (ctx) => Psg(),
+                      ),
+                    );
+                  },
+                  child: Image.asset('assets/images/C1.png')),
             ),
             Padding(
               padding:
