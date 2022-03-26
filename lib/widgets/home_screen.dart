@@ -1,4 +1,5 @@
 import 'package:dls_kits_pro/widgets/club_kits.dart';
+import 'package:dls_kits_pro/widgets/club_team.dart';
 import 'package:dls_kits_pro/widgets/national_kits.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -50,7 +51,7 @@ class HomeScreen extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (ctx) => ClubKits(),
+                                builder: (ctx) => ClubTeam(),
                               ),
                             );
                           },
