@@ -1,4 +1,4 @@
-import 'package:dls_kits_pro/widgets/club_teams/psg.dart';
+import 'package:dls_kits_pro/widgets/club_teams/League1.dart';
 import 'package:flutter/material.dart';
 
 class ClubTeam extends StatelessWidget {
