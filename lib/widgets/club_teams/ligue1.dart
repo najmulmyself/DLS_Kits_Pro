@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Psg extends StatelessWidget {
-  const Psg({Key? key}) : super(key: key);
+class Ligue1 extends StatelessWidget {
+  const Ligue1({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('League 1'),
+        title: const Text('Ligue 1'),
       ),
       body: SingleChildScrollView(
         child: Column(
