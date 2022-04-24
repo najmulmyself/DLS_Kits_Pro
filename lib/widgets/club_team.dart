@@ -2,6 +2,8 @@ import 'package:dls_kits_pro/widgets/club_teams/la_liga.dart';
 import 'package:dls_kits_pro/widgets/club_teams/ligue1.dart';
 import 'package:flutter/material.dart';
 
+import 'club_teams/premier_league.dart';
+
 class ClubTeam extends StatelessWidget {
   const ClubTeam({Key? key}) : super(key: key);
 
@@ -44,22 +46,50 @@ class ClubTeam extends StatelessWidget {
             Padding(
               padding:
                   const EdgeInsets.symmetric(horizontal: 20, vertical: 8.0),
-              child: Image.asset('assets/images/C3.png'),
+              child: GestureDetector(onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (ctx) => const PremierLeague(),
+                      ),
+                    );
+                  },child: Image.asset('assets/images/C3.png')),
             ),
             Padding(
               padding:
                   const EdgeInsets.symmetric(horizontal: 20, vertical: 8.0),
-              child: Image.asset('assets/images/C4.png'),
+              child: GestureDetector(onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (ctx) => const Ligue1(),
+                      ),
+                    );
+                  },child: Image.asset('assets/images/C4.png')),
             ),
             Padding(
               padding:
                   const EdgeInsets.symmetric(horizontal: 20, vertical: 8.0),
-              child: Image.asset('assets/images/C5.png'),
+              child: GestureDetector(onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (ctx) => const Ligue1(),
+                      ),
+                    );
+                  },child: Image.asset('assets/images/C5.png')),
             ),
             Padding(
               padding:
                   const EdgeInsets.symmetric(horizontal: 20, vertical: 8.0),
-              child: Image.asset('assets/images/C6.png'),
+              child: GestureDetector(onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (ctx) => const Ligue1(),
+                      ),
+                    );
+                  },child: Image.asset('assets/images/C6.png')),
             ),
           ],
         ),

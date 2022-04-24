@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class LaLiga extends StatelessWidget {
-  const LaLiga({ Key? key }) : super(key: key);
+class PremierLeague extends StatelessWidget {
+  const PremierLeague({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class LaLiga extends StatelessWidget {
                   Expanded(
                     flex: 1,
                     child: Image(
-                      image: AssetImage('assets/clubTeams/fcb19.png'),
+                      image: AssetImage('assets/clubTeams/chelsea21.png'),
                     ),
                   ),
                   SizedBox(
@@ -30,7 +30,7 @@ class LaLiga extends StatelessWidget {
                   Expanded(
                     flex: 1,
                     child: Image(
-                      image: AssetImage('assets/clubTeams/fcb20.png'),
+                      image: AssetImage('assets/clubTeams/liverpool19.png'),
                     ),
                   ),
                 ],
@@ -45,7 +45,7 @@ class LaLiga extends StatelessWidget {
                   Expanded(
                     flex: 1,
                     child: Image(
-                      image: AssetImage('assets/clubTeams/fcb19.png'),
+                      image: AssetImage('assets/clubTeams/liverpool21.png'),
                     ),
                   ),
               SizedBox(
@@ -54,7 +54,7 @@ class LaLiga extends StatelessWidget {
                   Expanded(
                     flex: 1,
                     child: Image(
-                      image: AssetImage('assets/clubTeams/fcb20.png'),
+                      image: AssetImage('assets/clubTeams/man_u19.png'),
                     ),
                   ),
               SizedBox(
@@ -63,7 +63,7 @@ class LaLiga extends StatelessWidget {
                   Expanded(
                     flex: 1,
                     child: Image(
-                      image: AssetImage('assets/clubTeams/fcb21.png'),
+                      image: AssetImage('assets/clubTeams/man_u21.png'),
                     ),
                   ),
               SizedBox(
@@ -72,7 +72,7 @@ class LaLiga extends StatelessWidget {
                   Expanded(
                     flex: 1,
                     child: Image(
-                      image: AssetImage('assets/clubTeams/fcb22.png'),
+                      image: AssetImage('assets/clubTeams/man_city19.png'),
                     ),
                   ),
               SizedBox(
@@ -81,7 +81,7 @@ class LaLiga extends StatelessWidget {
                   Expanded(
                     flex: 1,
                     child: Image(
-                      image: AssetImage('assets/clubTeams/realmadrid19.png'),
+                      image: AssetImage('assets/clubTeams/man_city20.png'),
                     ),
                   ),
               SizedBox(
@@ -90,25 +90,7 @@ class LaLiga extends StatelessWidget {
                   Expanded(
                     flex: 1,
                     child: Image(
-                      image: AssetImage('assets/clubTeams/realmadrid20.png'),
-                    ),
-                  ),
-              SizedBox(
-                    width: 10,
-                  ),
-                  Expanded(
-                    flex: 1,
-                    child: Image(
-                      image: AssetImage('assets/clubTeams/realmadrid21.png'),
-                    ),
-                  ),
-              SizedBox(
-                    width: 10,
-                  ),
-                  Expanded(
-                    flex: 1,
-                    child: Image(
-                      image: AssetImage('assets/clubTeams/atm21.png'),
+                      image: AssetImage('assets/clubTeams/man_city21.png'),
                     ),
                   ),
                 ],
