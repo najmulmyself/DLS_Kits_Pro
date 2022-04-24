@@ -7,7 +7,7 @@ class PremierLeague extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('La Liga'),
+        title: const Text('Premier League'),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -48,7 +48,7 @@ class PremierLeague extends StatelessWidget {
                       image: AssetImage('assets/clubTeams/liverpool21.png'),
                     ),
                   ),
-              SizedBox(
+                  SizedBox(
                     width: 10,
                   ),
                   Expanded(
@@ -57,16 +57,22 @@ class PremierLeague extends StatelessWidget {
                       image: AssetImage('assets/clubTeams/man_u19.png'),
                     ),
                   ),
-              SizedBox(
-                    width: 10,
-                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 5, right: 20, left: 20),
+              width: double.infinity,
+              height: 300,
+              child: Row(
+                children: const [
                   Expanded(
                     flex: 1,
                     child: Image(
                       image: AssetImage('assets/clubTeams/man_u21.png'),
                     ),
                   ),
-              SizedBox(
+                  SizedBox(
                     width: 10,
                   ),
                   Expanded(
@@ -75,16 +81,22 @@ class PremierLeague extends StatelessWidget {
                       image: AssetImage('assets/clubTeams/man_city19.png'),
                     ),
                   ),
-              SizedBox(
-                    width: 10,
-                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 5, right: 20, left: 20),
+              width: double.infinity,
+              height: 300,
+              child: Row(
+                children: const [
                   Expanded(
                     flex: 1,
                     child: Image(
                       image: AssetImage('assets/clubTeams/man_city20.png'),
                     ),
                   ),
-              SizedBox(
+                  SizedBox(
                     width: 10,
                   ),
                   Expanded(
@@ -96,6 +108,90 @@ class PremierLeague extends StatelessWidget {
                 ],
               ),
             ),
+            // Container(
+            //   margin: EdgeInsets.only(top: 5, right: 20, left: 20),
+            //   width: double.infinity,
+            //   height: 300,
+            //   child: Row(
+            //     children: const [
+            //       Expanded(
+            //         flex: 1,
+            //         child: Image(
+            //           image: AssetImage('assets/clubTeams/man_u21.png'),
+            //         ),
+            //       ),
+            //       SizedBox(
+            //         width: 10,
+            //       ),
+            //       Expanded(
+            //         flex: 1,
+            //         child: Image(
+            //           image: AssetImage('assets/clubTeams/liverpool19.png'),
+            //         ),
+            //       ),
+            //     ],
+            //   ),
+            // ),
+            // Container(
+            //   margin: EdgeInsets.only(top: 5, right: 20, left: 20),
+            //   width: double.infinity,
+            //   height: 300,
+            //   child: Row(
+            //     children: const [
+            //       Expanded(
+            //         flex: 1,
+            //         child: Image(
+            //           image: AssetImage('assets/clubTeams/liverpool21.png'),
+            //         ),
+            //       ),
+            //   SizedBox(
+            //         width: 10,
+            //       ),
+            //       Expanded(
+            //         flex: 1,
+            //         child: Image(
+            //           image: AssetImage('assets/clubTeams/man_u19.png'),
+            //         ),
+            //       ),
+            //   SizedBox(
+            //         width: 10,
+            //       ),
+            //       Expanded(
+            //         flex: 1,
+            //         child: Image(
+            //           image: AssetImage('assets/clubTeams/man_u21.png'),
+            //         ),
+            //       ),
+            //   SizedBox(
+            //         width: 10,
+            //       ),
+            //       Expanded(
+            //         flex: 1,
+            //         child: Image(
+            //           image: AssetImage('assets/clubTeams/man_city19.png'),
+            //         ),
+            //       ),
+            //   SizedBox(
+            //         width: 10,
+            //       ),
+            //       Expanded(
+            //         flex: 1,
+            //         child: Image(
+            //           image: AssetImage('assets/clubTeams/man_city20.png'),
+            //         ),
+            //       ),
+            //   SizedBox(
+            //         width: 10,
+            //       ),
+            //       Expanded(
+            //         flex: 1,
+            //         child: Image(
+            //           image: AssetImage('assets/clubTeams/man_city21.png'),
+            //         ),
+            //       ),
+            //     ],
+            //   ),
+            // ),
           ],
         ),
       ),

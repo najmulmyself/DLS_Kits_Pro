@@ -45,28 +45,10 @@ class LaLiga extends StatelessWidget {
                   Expanded(
                     flex: 1,
                     child: Image(
-                      image: AssetImage('assets/clubTeams/fcb19.png'),
-                    ),
-                  ),
-              SizedBox(
-                    width: 10,
-                  ),
-                  Expanded(
-                    flex: 1,
-                    child: Image(
-                      image: AssetImage('assets/clubTeams/fcb20.png'),
-                    ),
-                  ),
-              SizedBox(
-                    width: 10,
-                  ),
-                  Expanded(
-                    flex: 1,
-                    child: Image(
                       image: AssetImage('assets/clubTeams/fcb21.png'),
                     ),
                   ),
-              SizedBox(
+                  SizedBox(
                     width: 10,
                   ),
                   Expanded(
@@ -75,16 +57,22 @@ class LaLiga extends StatelessWidget {
                       image: AssetImage('assets/clubTeams/fcb22.png'),
                     ),
                   ),
-              SizedBox(
-                    width: 10,
-                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 5, right: 20, left: 20),
+              width: double.infinity,
+              height: 300,
+              child: Row(
+                children: const [
                   Expanded(
                     flex: 1,
                     child: Image(
                       image: AssetImage('assets/clubTeams/realmadrid19.png'),
                     ),
                   ),
-              SizedBox(
+                  SizedBox(
                     width: 10,
                   ),
                   Expanded(
@@ -93,16 +81,22 @@ class LaLiga extends StatelessWidget {
                       image: AssetImage('assets/clubTeams/realmadrid20.png'),
                     ),
                   ),
-              SizedBox(
-                    width: 10,
-                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 5, right: 20, left: 20),
+              width: double.infinity,
+              height: 300,
+              child: Row(
+                children: const [
                   Expanded(
                     flex: 1,
                     child: Image(
                       image: AssetImage('assets/clubTeams/realmadrid21.png'),
                     ),
                   ),
-              SizedBox(
+                  SizedBox(
                     width: 10,
                   ),
                   Expanded(
@@ -114,6 +108,84 @@ class LaLiga extends StatelessWidget {
                 ],
               ),
             ),
+            // Container(
+            //   margin: EdgeInsets.only(top: 5, right: 20, left: 20),
+            //   width: double.infinity,
+            //   height: 300,
+            //   child: Row(
+            //     children: const [
+            //       Expanded(
+            //         flex: 1,
+            //         child: Image(
+            //           image: AssetImage('assets/clubTeams/fcb19.png'),
+            //         ),
+            //       ),
+            //   SizedBox(
+            //         width: 10,
+            //       ),
+            //       Expanded(
+            //         flex: 1,
+            //         child: Image(
+            //           image: AssetImage('assets/clubTeams/fcb20.png'),
+            //         ),
+            //       ),
+            //   SizedBox(
+            //         width: 10,
+            //       ),
+            //       Expanded(
+            //         flex: 1,
+            //         child: Image(
+            //           image: AssetImage('assets/clubTeams/fcb21.png'),
+            //         ),
+            //       ),
+            //   SizedBox(
+            //         width: 10,
+            //       ),
+            //       Expanded(
+            //         flex: 1,
+            //         child: Image(
+            //           image: AssetImage('assets/clubTeams/fcb22.png'),
+            //         ),
+            //       ),
+            //   SizedBox(
+            //         width: 10,
+            //       ),
+            //       Expanded(
+            //         flex: 1,
+            //         child: Image(
+            //           image: AssetImage('assets/clubTeams/realmadrid19.png'),
+            //         ),
+            //       ),
+            //   SizedBox(
+            //         width: 10,
+            //       ),
+            //       Expanded(
+            //         flex: 1,
+            //         child: Image(
+            //           image: AssetImage('assets/clubTeams/realmadrid20.png'),
+            //         ),
+            //       ),
+            //   SizedBox(
+            //         width: 10,
+            //       ),
+            //       Expanded(
+            //         flex: 1,
+            //         child: Image(
+            //           image: AssetImage('assets/clubTeams/realmadrid21.png'),
+            //         ),
+            //       ),
+            //   SizedBox(
+            //         width: 10,
+            //       ),
+            //       Expanded(
+            //         flex: 1,
+            //         child: Image(
+            //           image: AssetImage('assets/clubTeams/atm21.png'),
+            //         ),
+            //       ),
+            //     ],
+            //   ),
+            // ),
           ],
         ),
       ),
