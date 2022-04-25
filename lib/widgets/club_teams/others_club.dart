@@ -1,4 +1,7 @@
+import 'package:dls_kits_pro/widgets/kit_page.dart';
 import 'package:flutter/material.dart';
+
+import '../kit.dart';
 
 class OtherClub extends StatelessWidget {
   const OtherClub({Key? key}) : super(key: key);
@@ -17,11 +20,17 @@ class OtherClub extends StatelessWidget {
               width: double.infinity,
               height: 300,
               child: Row(
-                children: const [
+                children: [
                   Expanded(
                     flex: 1,
-                    child: Image(
-                      image: AssetImage('assets/clubTeams/fut_20.png'),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (ctx) => KitPage()));
+                      },
+                      child: Image(
+                        image: AssetImage('assets/clubTeams/fut_20.png'),
+                      ),
                     ),
                   ),
                   SizedBox(
