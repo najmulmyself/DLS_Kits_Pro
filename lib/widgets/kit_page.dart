@@ -35,6 +35,10 @@ class KitPage extends StatelessWidget {
             Kit(
               urlText: "imgur.com/6u8xm5fj.png",
             ),
+            Divider(height: 39, thickness: 3),
+            Kit(
+              urlText: "imgur.com/6u8xm5fj.png",
+            ),
           ],
         ),
       ),

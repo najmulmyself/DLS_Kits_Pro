@@ -14,8 +14,20 @@ class _KitState extends State<Kit> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text('Home Kit'),
-        Text('URL'),
+        Text(
+          'Home Kit',
+          style: TextStyle(
+            fontSize: 22,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        Text(
+          'URL',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
         Padding(
           padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 8),
           child: Container(
