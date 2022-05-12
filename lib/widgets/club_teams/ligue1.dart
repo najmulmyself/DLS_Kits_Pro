@@ -28,7 +28,11 @@ class Ligue1 extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                             builder: (ctx) => KitPage(
-                                title: "PSG", centeredText: "PSG Kit 19/20"),
+                                homeKit: "Home Kit",
+                                homeKitI:
+                                    "https://picsum.photos/seed/picsum/536/354",
+                                title: "PSG",
+                                centeredText: "PSG Kit 19/20"),
                           ),
                         );
                       },
@@ -48,20 +52,12 @@ class Ligue1 extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                             builder: (ctx) => KitPage(
-                                title: "PSG", centeredText: "PSG Kit 20/21"),
+                                homeKit: "Home Kit",
+                                title: "PSG",
+                                centeredText: "PSG Kit 20/21"),
                           ),
                         );
                       },
-                      // child: GestureDetector(
-                      //   onTap: () {
-                      //     Navigator.push(
-                      //       context,
-                      //       MaterialPageRoute(
-                      //         builder: (ctx) => KitPage(
-                      //             title: "PSG", centeredText: "PSG Kit 20/21"),
-                      //       ),
-                      //     );
-                      //   },
                       child: Image(
                         image: AssetImage('assets/clubTeams/psg2020.png'),
                       ),
@@ -84,7 +80,9 @@ class Ligue1 extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                             builder: (ctx) => KitPage(
-                                title: "PSG", centeredText: "PSG Kit 21/22"),
+                                awayKit: "Away Kit",
+                                title: "PSG",
+                                centeredText: "PSG Kit 21/22"),
                           ),
                         );
                       },

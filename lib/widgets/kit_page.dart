@@ -4,11 +4,40 @@ import 'kit.dart';
 
 class KitPage extends StatelessWidget {
   // const KitPage({Key? key}) : super(key: key);
-  final String? title, centeredText;
-  KitPage({this.title, this.centeredText});
+  final String? title,
+      centeredText,
+      homeKit,
+      awayKit,
+      thirdKit,
+      gkHome,
+      gkaway,
+      gkThird,
+      homeKitI,
+      awayKitI,
+      thirdKitI,
+      gkHomeI,
+      gkawayI,
+      gkThirdI;
+  KitPage({
+    this.title,
+    this.centeredText,
+    this.homeKit,
+    this.awayKit,
+    this.thirdKit,
+    this.gkHome,
+    this.gkaway,
+    this.gkThird,
+    this.homeKitI,
+    this.awayKitI,
+    this.thirdKitI,
+    this.gkHomeI,
+    this.gkawayI,
+    this.gkThirdI,
+  });
 
   @override
   Widget build(BuildContext context) {
+    print('Hello kit name: ');
     return Scaffold(
       appBar: AppBar(
         title: Text(title!),
@@ -36,21 +65,23 @@ class KitPage extends StatelessWidget {
             ),
             Kit(
               logo: "https://i.imgur.com/4nwOlH5.png",
-              kitName: "Home kit",
-              urlText: "imgur.com/6u8xm5fj.png",
+              kitName: homeKit,
+              urlText: homeKitI,
+
+              // urlText: "imgur.com/6u8xm5fj.png",
             ),
             Divider(height: 39, thickness: 3),
             Kit(
               logo: "https://i.imgur.com/4nwOlH5.png",
-              kitName: "Away Kit",
-              urlText: "imgur.com/6u8xm5fj.png",
+              kitName: awayKit,
+              urlText: awayKitI,
             ),
             Divider(height: 39, thickness: 3),
             Kit(
               logo:
                   "https://i.ibb.co/wKfgQnL/Bar-a-2-2023.png?fbclid=IwAR2GyGsbllxsr69TbvvcEb2dUgaohkNj6c85GOycxKtCI7w9uq6I0UaaWUk",
-              kitName: "Others Kit",
-              urlText: "imgur.com/6u8xm5fj.png",
+              kitName: thirdKit,
+              urlText: thirdKitI,
             ),
           ],
         ),

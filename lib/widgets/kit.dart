@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class Kit extends StatefulWidget {
-  final String? urlText, kitName, kitImage, logo;
-  Kit({this.urlText, this.kitName, this.kitImage, this.logo});
+  final String? urlText, kitName, logo;
+  Kit({this.urlText, this.kitName, this.logo});
 
   @override
   State<Kit> createState() => _KitState();
@@ -12,6 +12,9 @@ class Kit extends StatefulWidget {
 class _KitState extends State<Kit> {
   @override
   Widget build(BuildContext context) {
+    // print('Kit : $kitName');
+    print('kit: ${widget.kitName} ');
+
     return Column(
       children: [
         Image.network(widget.logo!),
@@ -88,7 +91,7 @@ class _KitState extends State<Kit> {
         Container(
           height: 300,
           width: 300,
-          child: Image.asset('assets/images/0.png'),
+          child: Image.network(widget.urlText!),
         ),
       ],
     );
