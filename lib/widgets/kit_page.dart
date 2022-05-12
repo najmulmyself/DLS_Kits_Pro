@@ -48,7 +48,7 @@ class KitPage extends StatelessWidget {
             Divider(height: 39, thickness: 3),
             Kit(
               logo:
-                  "https://i.ibb.co/hCRCntj/Picsart-22-02-05-15-19-23-027.jpg",
+                  "https://i.ibb.co/wKfgQnL/Bar-a-2-2023.png?fbclid=IwAR2GyGsbllxsr69TbvvcEb2dUgaohkNj6c85GOycxKtCI7w9uq6I0UaaWUk",
               kitName: "Others Kit",
               urlText: "imgur.com/6u8xm5fj.png",
             ),

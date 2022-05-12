@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../kit_page.dart';
+
 class Ligue1 extends StatelessWidget {
   const Ligue1({Key? key}) : super(key: key);
 
@@ -17,11 +19,22 @@ class Ligue1 extends StatelessWidget {
               width: double.infinity,
               height: 300,
               child: Row(
-                children: const [
+                children: [
                   Expanded(
                     flex: 1,
-                    child: Image(
-                      image: AssetImage('assets/clubTeams/psg19.png'),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (ctx) => KitPage(
+                                title: "PSG", centeredText: "PSG Kit 19/20"),
+                          ),
+                        );
+                      },
+                      child: Image(
+                        image: AssetImage('assets/clubTeams/psg19.png'),
+                      ),
                     ),
                   ),
                   SizedBox(
@@ -29,8 +42,29 @@ class Ligue1 extends StatelessWidget {
                   ),
                   Expanded(
                     flex: 1,
-                    child: Image(
-                      image: AssetImage('assets/clubTeams/psg2020.png'),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (ctx) => KitPage(
+                                title: "PSG", centeredText: "PSG Kit 20/21"),
+                          ),
+                        );
+                      },
+                      // child: GestureDetector(
+                      //   onTap: () {
+                      //     Navigator.push(
+                      //       context,
+                      //       MaterialPageRoute(
+                      //         builder: (ctx) => KitPage(
+                      //             title: "PSG", centeredText: "PSG Kit 20/21"),
+                      //       ),
+                      //     );
+                      //   },
+                      child: Image(
+                        image: AssetImage('assets/clubTeams/psg2020.png'),
+                      ),
                     ),
                   ),
                 ],
@@ -41,14 +75,24 @@ class Ligue1 extends StatelessWidget {
               width: double.infinity,
               height: 300,
               child: Row(
-                children: const [
+                children: [
                   Expanded(
                     flex: 1,
-                    child: Image(
-                      image: AssetImage('assets/clubTeams/psg21.png'),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (ctx) => KitPage(
+                                title: "PSG", centeredText: "PSG Kit 21/22"),
+                          ),
+                        );
+                      },
+                      child: Image(
+                        image: AssetImage('assets/clubTeams/psg21.png'),
+                      ),
                     ),
                   ),
-            
                 ],
               ),
             ),
