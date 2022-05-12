@@ -25,8 +25,14 @@ class OtherClub extends StatelessWidget {
                     flex: 1,
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (ctx) => KitPage()));
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (ctx) => KitPage(
+                                title: "Fifa Ultimate Team",
+                                centeredText: "Fifa ultimate Team Kit 2022"),
+                          ),
+                        );
                       },
                       child: Image(
                         image: AssetImage('assets/clubTeams/fut_20.png'),

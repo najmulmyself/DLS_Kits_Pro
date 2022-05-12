@@ -4,12 +4,14 @@ import 'kit.dart';
 
 class KitPage extends StatelessWidget {
   // const KitPage({Key? key}) : super(key: key);
+  final String? title, centeredText;
+  KitPage({this.title, this.centeredText});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Brazil'),
+        title: Text(title!),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -22,7 +24,7 @@ class KitPage extends StatelessWidget {
                 color: Colors.red,
                 child: Center(
                   child: Text(
-                    'Brazil Kits 2021',
+                    centeredText!,
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -33,10 +35,21 @@ class KitPage extends StatelessWidget {
               ),
             ),
             Kit(
+              logo: "https://i.imgur.com/4nwOlH5.png",
+              kitName: "Home kit",
               urlText: "imgur.com/6u8xm5fj.png",
             ),
             Divider(height: 39, thickness: 3),
             Kit(
+              logo: "https://i.imgur.com/4nwOlH5.png",
+              kitName: "Away Kit",
+              urlText: "imgur.com/6u8xm5fj.png",
+            ),
+            Divider(height: 39, thickness: 3),
+            Kit(
+              logo:
+                  "https://i.ibb.co/hCRCntj/Picsart-22-02-05-15-19-23-027.jpg",
+              kitName: "Others Kit",
               urlText: "imgur.com/6u8xm5fj.png",
             ),
           ],
