@@ -18,8 +18,11 @@ class KitPage extends StatelessWidget {
       gkHomeI,
       gkawayI,
       gkThirdI;
+
+  final logo;
   KitPage({
     this.title,
+    this.logo,
     this.centeredText,
     this.homeKit,
     this.awayKit,
@@ -62,6 +65,10 @@ class KitPage extends StatelessWidget {
                   ),
                 ),
               ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Image.network(logo),
             ),
             Kit(
               logo: "https://i.imgur.com/4nwOlH5.png",
