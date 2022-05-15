@@ -28,10 +28,20 @@ class Ligue1 extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                             builder: (ctx) => KitPage(
-                                logo: "https://picsum.photos/id/237/200/300",
+                                logo:
+                                    "https://e7.pngegg.com/pngimages/506/731/png-clipart-paris-saint-germain-f-c-paris-saint-germain-academy-paris-fc-uefa-champions-league-france-ligue-1-fc-barcelona-blue-trademark-thumbnail.png",
                                 homeKit: "Home Kit",
-                                homeKitI:
-                                    "https://picsum.photos/seed/picsum/536/354",
+                                homeKitI: "https://i.imgur.com/MW2oYBt.png",
+                                awayKit: "Away Kit",
+                                awayKitI: "https://i.imgur.com/fYxAKsC.png",
+                                thirdKit: "Third Kit",
+                                thirdKitI: "https://i.imgur.com/fYxAKsC.png",
+                                gkHome: "Gk Home",
+                                gkHomeI: "https://i.imgur.com/nKX2FRt.png",
+                                gkaway: "Gk Away Kit",
+                                gkawayI: "https://i.imgur.com/ls4qzeR.png",
+                                gkThird: "Gk Third Kit",
+                                gkThirdI: "https://i.imgur.com/dozCa7r.png",
                                 title: "PSG",
                                 centeredText: "PSG Kit 19/20"),
                           ),
@@ -53,9 +63,19 @@ class Ligue1 extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                             builder: (ctx) => KitPage(
-                                logo:
-                                    'https://picsum.photos/seed/picsum/536/354',
+                                logo: "https://i.imgur.com/4nwOlH5.png",
                                 homeKit: "Home Kit",
+                                homeKitI: "https://i.imgur.com/NP3QESn.png",
+                                awayKit: "Away Kit",
+                                awayKitI: "https://i.imgur.com/Pi353Eo.png",
+                                thirdKit: "Third Kit",
+                                thirdKitI: "https://i.imgur.com/lE7fG6U.png",
+                                gkHome: "Gk Home",
+                                gkHomeI: "https://i.imgur.com/pVtaWKU.png",
+                                gkaway: "Gk Away Kit",
+                                gkawayI: "https://i.imgur.com/dFqio1o.png",
+                                gkThird: "Gk Third Kit",
+                                gkThirdI: "https://i.imgur.com/mIM3NhF.png",
                                 title: "PSG",
                                 centeredText: "PSG Kit 20/21"),
                           ),

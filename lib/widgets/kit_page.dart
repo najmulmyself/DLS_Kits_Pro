@@ -70,10 +70,9 @@ class KitPage extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Image.network(logo!),
+              child: Image.network(logo!, height: 250),
             ),
             Kit(
-              // logo: "https://i.imgur.com/4nwOlH5.png",
               kitName: homeKit,
               urlText: homeKitI,
 
@@ -81,15 +80,29 @@ class KitPage extends StatelessWidget {
             ),
             Divider(height: 39, thickness: 3),
             Kit(
-              // logo: "https://i.imgur.com/4nwOlH5.png",
-              // kitName: awayKit,
-              // urlText: awayKitI,
+              kitName: awayKit,
+              urlText: awayKitI,
             ),
             Divider(height: 39, thickness: 3),
             Kit(
-                // kitName: thirdKit,
-                // urlText: thirdKitI,
-                ),
+              kitName: thirdKit,
+              urlText: thirdKitI,
+            ),
+            Divider(height: 39, thickness: 3),
+            Kit(
+              kitName: gkHome,
+              urlText: gkHomeI,
+            ),
+            Divider(height: 39, thickness: 3),
+            Kit(
+              kitName: gkaway,
+              urlText: gkawayI,
+            ),
+            Divider(height: 39, thickness: 3),
+            Kit(
+              kitName: gkThird,
+              urlText: gkThirdI,
+            ),
           ],
         ),
       ),
