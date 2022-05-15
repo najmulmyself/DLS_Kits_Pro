@@ -29,6 +29,7 @@ class OtherClub extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                             builder: (ctx) => KitPage(
+                                logo: '',
                                 title: "Fifa Ultimate Team",
                                 centeredText: "Fifa ultimate Team Kit 2022"),
                           ),

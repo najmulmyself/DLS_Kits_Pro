@@ -17,13 +17,15 @@ class KitPage extends StatelessWidget {
       thirdKitI,
       gkHomeI,
       gkawayI,
-      gkThirdI;
+      gkThirdI,
+      logo;
 
-  final logo;
+  // @required String homeKit,awayKit,thirdKit,centeredText;
+
   KitPage({
-    this.title,
-    this.logo,
-    this.centeredText,
+    required this.title,
+    required this.logo,
+    required this.centeredText,
     this.homeKit,
     this.awayKit,
     this.thirdKit,
@@ -40,7 +42,7 @@ class KitPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print('Hello kit name: ');
+    // print('Hello kit name: ');
     return Scaffold(
       appBar: AppBar(
         title: Text(title!),
@@ -56,7 +58,7 @@ class KitPage extends StatelessWidget {
                 color: Colors.red,
                 child: Center(
                   child: Text(
-                    centeredText!,
+                    centeredText!, //Psg kit 20/21
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -68,10 +70,10 @@ class KitPage extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Image.network(logo),
+              child: Image.network(logo!),
             ),
             Kit(
-              logo: "https://i.imgur.com/4nwOlH5.png",
+              // logo: "https://i.imgur.com/4nwOlH5.png",
               kitName: homeKit,
               urlText: homeKitI,
 
@@ -79,17 +81,15 @@ class KitPage extends StatelessWidget {
             ),
             Divider(height: 39, thickness: 3),
             Kit(
-              logo: "https://i.imgur.com/4nwOlH5.png",
-              kitName: awayKit,
-              urlText: awayKitI,
+              // logo: "https://i.imgur.com/4nwOlH5.png",
+              // kitName: awayKit,
+              // urlText: awayKitI,
             ),
             Divider(height: 39, thickness: 3),
             Kit(
-              logo:
-                  "https://i.ibb.co/wKfgQnL/Bar-a-2-2023.png?fbclid=IwAR2GyGsbllxsr69TbvvcEb2dUgaohkNj6c85GOycxKtCI7w9uq6I0UaaWUk",
-              kitName: thirdKit,
-              urlText: thirdKitI,
-            ),
+                // kitName: thirdKit,
+                // urlText: thirdKitI,
+                ),
           ],
         ),
       ),
