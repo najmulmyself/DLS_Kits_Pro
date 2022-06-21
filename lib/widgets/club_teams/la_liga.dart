@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:dls_kits_pro/widgets/kit_page.dart';
 import 'package:flutter/material.dart';
@@ -23,8 +23,34 @@ class LaLiga extends StatelessWidget {
                 children: [
                   Expanded(
                     flex: 1,
-                    child: Image(
-                      image: AssetImage('assets/clubTeams/fcb19.png'),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (ctx) => KitPage(
+                              title: "FC BARCELONA",
+                              logo: "https://i.imgur.com/HiliJUx.png",
+                              centeredText: "BARCELONA KIT 19/20",
+                              homeKit: "Home Kit",
+                              homeKitI: "https://i.imgur.com/Y8pa3uq.png",
+                              awayKit: "Away Kit",
+                              awayKitI: "https://i.imgur.com/lCfx46C.png",
+                              thirdKit: "Third Kit",
+                              thirdKitI: "https://i.imgur.com/ClcaZmx.png",
+                              gkHome: "Gk Home",
+                              gkHomeI: "https://i.imgur.com/9CmhSGp.png",
+                              gkaway: "Gk Away",
+                              gkawayI: "https://i.imgur.com/Ggj4Dum.png",
+                              gkThird: "Gk Third",
+                              gkThirdI: "https://i.imgur.com/FYfzh2d.png",
+                            ),
+                          ),
+                        );
+                      },
+                      child: Image(
+                        image: AssetImage('assets/clubTeams/fcb19.png'),
+                      ),
                     ),
                   ),
                   SizedBox(
@@ -34,12 +60,26 @@ class LaLiga extends StatelessWidget {
                     flex: 1,
                     child: GestureDetector(
                       onTap: () {
-                        MaterialPageRoute(
-                          builder: (ctx) => KitPage(
-                            title: "FC BARCELONA",
-                            logo: 'https://i.imgur.com/HiliJUx.png',
-                            centeredText: 'Barcelona Kit 19/20',
-                            
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (ctx) => KitPage(
+                              title: "FC BARCELONA",
+                              logo: "https://i.imgur.com/HiliJUx.png",
+                              centeredText: "BARCELONA KIT 20/21",
+                              homeKit: "Home Kit",
+                              homeKitI: "https://i.imgur.com/j4UkFpK.png",
+                              awayKit: "Away Kit",
+                              awayKitI: "https://i.imgur.com/YeLPGA4.png",
+                              thirdKit: "Third Kit",
+                              thirdKitI: "https://i.imgur.com/81nhNuR.png",
+                              gkHome: "Gk Home",
+                              gkHomeI: "https://i.imgur.com/6EKUJc9.png",
+                              gkaway: "Gk Away",
+                              gkawayI: "https://i.imgur.com/vRssMHB.png",
+                              gkThird: "Gk Third",
+                              gkThirdI: "https://i.imgur.com/XFaSm2d.png",
+                            ),
                           ),
                         );
                       },
@@ -56,11 +96,37 @@ class LaLiga extends StatelessWidget {
               width: double.infinity,
               height: 300,
               child: Row(
-                children: const [
+                children: [
                   Expanded(
                     flex: 1,
-                    child: Image(
-                      image: AssetImage('assets/clubTeams/fcb21.png'),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (ctx) => KitPage(
+                              title: "FC BARCELONA",
+                              logo: "https://i.imgur.com/HiliJUx.png",
+                              centeredText: "BARCELONA KIT 21/22",
+                              homeKit: "Home Kit",
+                              homeKitI: "https://i.imgur.com/pxib2jY.png",
+                              awayKit: "Away Kit",
+                              awayKitI: "https://i.imgur.com/KB7w2Ei.png",
+                              thirdKit: "Third Kit",
+                              thirdKitI: "https://i.imgur.com/eJridpb.png",
+                              gkHome: "Gk Home",
+                              gkHomeI: "https://i.imgur.com/6PFK2oS.png",
+                              gkaway: "Gk Away",
+                              gkawayI: "https://i.imgur.com/wsT00TO.png",
+                              gkThird: "Gk Third",
+                              gkThirdI: "https://i.ibb.co/6RpSP62/p3.png",
+                            ),
+                          ),
+                        );
+                      },
+                      child: Image(
+                        image: AssetImage('assets/clubTeams/fcb21.png'),
+                      ),
                     ),
                   ),
                   SizedBox(
@@ -68,8 +134,33 @@ class LaLiga extends StatelessWidget {
                   ),
                   Expanded(
                     flex: 1,
-                    child: Image(
-                      image: AssetImage('assets/clubTeams/fcb22.png'),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (ctx) => KitPage(
+                              title: "FC BARCELONA",
+                              logo: "https://i.imgur.com/HiliJUx.png",
+                              centeredText: "BARCELONA KIT 22/23",
+                              homeKit: "Home Kit",
+                              homeKitI:
+                                  "https://i.ibb.co/HPBRDRx/Bar-a-1-2023.png",
+                              awayKit: "Away Kit",
+                              awayKitI:
+                                  "https://i.ibb.co/wKfgQnL/Bar-a-2-2023.png",
+                              thirdKit: "Third Kit",
+                              thirdKitI:
+                                  "https://i.ibb.co/kGzPXTW/Bar-a-3-2023.png",
+                              gkHome: "Gk Home",
+                              gkHomeI: "",
+                            ),
+                          ),
+                        );
+                      },
+                      child: Image(
+                        image: AssetImage('assets/clubTeams/fcb22.png'),
+                      ),
                     ),
                   ),
                 ],
@@ -80,11 +171,37 @@ class LaLiga extends StatelessWidget {
               width: double.infinity,
               height: 300,
               child: Row(
-                children: const [
+                children: [
                   Expanded(
                     flex: 1,
-                    child: Image(
-                      image: AssetImage('assets/clubTeams/realmadrid19.png'),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (ctx) => KitPage(
+                              title: "REAL MADRID",
+                              logo: "https://i.imgur.com/Vz2HtKe.png",
+                              centeredText: "REAL MADRID KIT 19/20",
+                              homeKit: "Home Kit",
+                              homeKitI: "https://i.imgur.com/j5hw86i.png",
+                              awayKit: "Away Kit",
+                              awayKitI: "https://i.imgur.com/2Xwmw8i.png",
+                              thirdKit: "Third Kit",
+                              thirdKitI: "https://i.imgur.com/XbLzPLm.png",
+                              gkHome: "Gk Home",
+                              gkHomeI: "https://i.imgur.com/TeOok75.png",
+                              gkaway: "Gk Away",
+                              gkawayI: "https://i.imgur.com/pJKrZGq.png",
+                              gkThird: "Gk Third",
+                              gkThirdI: "https://i.imgur.com/psjd3FL.png",
+                            ),
+                          ),
+                        );
+                      },
+                      child: Image(
+                        image: AssetImage('assets/clubTeams/realmadrid19.png'),
+                      ),
                     ),
                   ),
                   SizedBox(
@@ -92,8 +209,34 @@ class LaLiga extends StatelessWidget {
                   ),
                   Expanded(
                     flex: 1,
-                    child: Image(
-                      image: AssetImage('assets/clubTeams/realmadrid20.png'),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (ctx) => KitPage(
+                              title: "REAL MADRID",
+                              logo: "https://i.imgur.com/Vz2HtKe.png",
+                              centeredText: "REAL MADRID KIT 20/21",
+                              homeKit: "Home Kit",
+                              homeKitI: "https://i.imgur.com/YI3QczR.png",
+                              awayKit: "Away Kit",
+                              awayKitI: "https://i.imgur.com/4uutZsd.png",
+                              thirdKit: "Third Kit",
+                              thirdKitI: "https://i.imgur.com/iNxhnJk.png",
+                              gkHome: "Gk Home",
+                              gkHomeI: "https://i.imgur.com/aCNucnd.png",
+                              gkaway: "Gk Away",
+                              gkawayI: "https://i.imgur.com/ahTjFvr.png",
+                              gkThird: "Gk Third",
+                              gkThirdI: "https://i.imgur.com/MpB7Jv1.png",
+                            ),
+                          ),
+                        );
+                      },
+                      child: Image(
+                        image: AssetImage('assets/clubTeams/realmadrid20.png'),
+                      ),
                     ),
                   ),
                 ],
@@ -104,11 +247,39 @@ class LaLiga extends StatelessWidget {
               width: double.infinity,
               height: 300,
               child: Row(
-                children: const [
+                children: [
                   Expanded(
                     flex: 1,
-                    child: Image(
-                      image: AssetImage('assets/clubTeams/realmadrid21.png'),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (ctx) => KitPage(
+                              title: "REAL MADRID",
+                              logo: "https://i.imgur.com/Vz2HtKe.png",
+                              centeredText: "REAL MADRID KIT 21/22",
+                              homeKit: "Home Kit",
+                              homeKitI:
+                                  "https://i.ibb.co/6FZjPC2/HOME-KIT-MADRID-RC-net.png",
+                              awayKit: "Away Kit",
+                              awayKitI:
+                                  "https://i.ibb.co/mChc9fk/AWAY-MADRID-KIT-RC-net.png",
+                              thirdKit: "Third Kit",
+                              thirdKitI: "https://i.imgur.com/IXmfFJS.png",
+                              gkHome: "Gk Home",
+                              gkHomeI: "https://i.imgur.com/0M2XprU.png",
+                              gkaway: "Gk Away",
+                              gkawayI: "https://i.imgur.com/qpFbaaX.png",
+                              gkThird: "Gk Third",
+                              gkThirdI: "loading.....",
+                            ),
+                          ),
+                        );
+                      },
+                      child: Image(
+                        image: AssetImage('assets/clubTeams/realmadrid21.png'),
+                      ),
                     ),
                   ),
                   SizedBox(
@@ -116,8 +287,35 @@ class LaLiga extends StatelessWidget {
                   ),
                   Expanded(
                     flex: 1,
-                    child: Image(
-                      image: AssetImage('assets/clubTeams/atm21.png'),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (ctx) => KitPage(
+                              title: "ATLETICO MADRID",
+                              logo:
+                                  "https://i.ibb.co/pQHchbz/ATLETICO-LOGO.png",
+                              centeredText: "ATLETICO MADRID KIT 21/22",
+                              homeKit: "Home Kit",
+                              homeKitI: "https://i.imgur.com/dOhb4x6.png",
+                              awayKit: "Away Kit",
+                              awayKitI: "https://i.imgur.com/XZqWEsn.png",
+                              thirdKit: "Third Kit",
+                              thirdKitI: "https://i.imgur.com/CYQMks1.png",
+                              gkHome: "Gk Home",
+                              gkHomeI: "https://i.imgur.com/wa9ZiaE.png",
+                              gkaway: "Gk Away",
+                              gkawayI: "loading.....",
+                              gkThird: "Gk Third",
+                              gkThirdI: "loading.....",
+                            ),
+                          ),
+                        );
+                      },
+                      child: Image(
+                        image: AssetImage('assets/clubTeams/atm21.png'),
+                      ),
                     ),
                   ),
                 ],
