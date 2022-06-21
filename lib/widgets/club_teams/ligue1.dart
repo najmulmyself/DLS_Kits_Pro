@@ -28,8 +28,7 @@ class Ligue1 extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                             builder: (ctx) => KitPage(
-                                logo:
-                                    "https://e7.pngegg.com/pngimages/506/731/png-clipart-paris-saint-germain-f-c-paris-saint-germain-academy-paris-fc-uefa-champions-league-france-ligue-1-fc-barcelona-blue-trademark-thumbnail.png",
+                                logo: "https://i.imgur.com/4nwOlH5.png",
                                 homeKit: "Home Kit",
                                 homeKitI: "https://i.imgur.com/MW2oYBt.png",
                                 awayKit: "Away Kit",

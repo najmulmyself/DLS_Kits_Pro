@@ -1,7 +1,10 @@
+// ignore_for_file: prefer_const_constructors
+
+import 'package:dls_kits_pro/widgets/kit_page.dart';
 import 'package:flutter/material.dart';
 
 class LaLiga extends StatelessWidget {
-  const LaLiga({ Key? key }) : super(key: key);
+  const LaLiga({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +20,7 @@ class LaLiga extends StatelessWidget {
               width: double.infinity,
               height: 300,
               child: Row(
-                children: const [
+                children: [
                   Expanded(
                     flex: 1,
                     child: Image(
@@ -29,8 +32,20 @@ class LaLiga extends StatelessWidget {
                   ),
                   Expanded(
                     flex: 1,
-                    child: Image(
-                      image: AssetImage('assets/clubTeams/fcb20.png'),
+                    child: GestureDetector(
+                      onTap: () {
+                        MaterialPageRoute(
+                          builder: (ctx) => KitPage(
+                            title: "FC BARCELONA",
+                            logo: 'https://i.imgur.com/HiliJUx.png',
+                            centeredText: 'Barcelona Kit 19/20',
+                            
+                          ),
+                        );
+                      },
+                      child: Image(
+                        image: AssetImage('assets/clubTeams/fcb20.png'),
+                      ),
                     ),
                   ),
                 ],
@@ -108,7 +123,6 @@ class LaLiga extends StatelessWidget {
                 ],
               ),
             ),
-            
           ],
         ),
       ),

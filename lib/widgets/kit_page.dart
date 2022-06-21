@@ -68,9 +68,13 @@ class KitPage extends StatelessWidget {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Image.network(logo!, height: 250),
+            // Padding(
+            //   padding: const EdgeInsets.all(8.0),
+            //   child: Image.network(logo!, height: 250),
+            // ),
+            Kit(
+              kitName: 'Logo',
+              urlText: logo,
             ),
             Kit(
               kitName: homeKit,
