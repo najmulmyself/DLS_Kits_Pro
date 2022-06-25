@@ -19,6 +19,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // drawer: Drawer(),
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
@@ -36,6 +37,8 @@ class HomeScreen extends StatelessWidget {
                         //     throw 'Could not launch $url';
                         //   }
                         // }
+
+                       
                         launchURL();
                       },
                       child: Image.asset('assets/images/0001.png'),
