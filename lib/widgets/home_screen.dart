@@ -43,9 +43,7 @@ class HomeScreen extends StatelessWidget {
                       },
                       child: Image.asset('assets/images/0001.png'),
                     ),
-                    // SizedBox(
-                    //   height: 20,
-                    // ),
+                   
                     Padding(
                       padding: const EdgeInsets.symmetric(
                           horizontal: 20, vertical: 8.0),
