@@ -39,11 +39,14 @@ class OtherClub extends StatelessWidget {
                               thirdKit: "Third Kit",
                               thirdKitI: "https://i.imgur.com/7laJiNf.png",
                               gkHome: "Gk Home",
-                              gkHomeI: "loading ....",
+                              gkHomeI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
                               gkaway: "Gk Away Kit",
-                              gkawayI: "loading ....",
+                              gkawayI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
                               gkThird: "Gk Third Kit",
-                              gkThirdI: "loading ....",
+                              gkThirdI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
                               title: "FIFA ULTIMATE TEAM",
                               centeredText: "FIFA ULTIMATE TEAM Kit 2020",
                             ),
@@ -78,7 +81,8 @@ class OtherClub extends StatelessWidget {
                               gkaway: "Gk Away Kit",
                               gkawayI: "https://i.imgur.com/Omq4beW.png",
                               gkThird: "Gk Third Kit",
-                              gkThirdI: "LOADING .....",
+                              gkThirdI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
                               title: "KERALA BLASTERS",
                               centeredText: "KERALA BLASTERS Kit 20/21",
                             ),

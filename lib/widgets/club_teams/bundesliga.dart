@@ -21,7 +21,7 @@ class Bundesliga extends StatelessWidget {
               width: double.infinity,
               height: 300,
               child: Row(
-                children:  [
+                children: [
                   Expanded(
                     flex: 1,
                     child: GestureDetector(
@@ -75,9 +75,11 @@ class Bundesliga extends StatelessWidget {
                               gkHome: "Gk Home",
                               gkHomeI: "https://i.imgur.com/Yc0Qqqh.png",
                               gkaway: "Gk Away Kit",
-                              gkawayI: "LOADING ....",
+                              gkawayI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
                               gkThird: "Gk Third Kit",
-                              gkThirdI: "LOADING ....",
+                              gkThirdI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
                               title: "BAYERN MUNICH",
                               centeredText: "BAYERN MUNICH Kit 20/21",
                             ),
@@ -97,7 +99,7 @@ class Bundesliga extends StatelessWidget {
               width: double.infinity,
               height: 300,
               child: Row(
-                children:  [
+                children: [
                   Expanded(
                     flex: 1,
                     child: GestureDetector(
@@ -116,9 +118,11 @@ class Bundesliga extends StatelessWidget {
                               gkHome: "Gk Home",
                               gkHomeI: "https://i.imgur.com/yWIXgt2.png",
                               gkaway: "Gk Away Kit",
-                              gkawayI: "LOADING ....",
+                              gkawayI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
                               gkThird: "Gk Third Kit",
-                              gkThirdI: "LOADING ....",
+                              gkThirdI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
                               title: "RB LEIPZIP",
                               centeredText: "RB LEIPZIP Kit 20/21",
                             ),

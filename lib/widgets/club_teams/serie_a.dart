@@ -116,9 +116,11 @@ class SerieA extends StatelessWidget {
                               gkHome: "Gk Home",
                               gkHomeI: "https://i.ibb.co/1mJJQNB/p4.png",
                               gkaway: "Gk Away Kit",
-                              gkawayI: "loading....",
+                              gkawayI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
                               gkThird: "Gk Third Kit",
-                              gkThirdI: "loading ....",
+                              gkThirdI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
                               title: "JUVENTUS",
                               centeredText: "JUVENTUS Kit 21/22",
                             ),
@@ -147,13 +149,17 @@ class SerieA extends StatelessWidget {
                               awayKit: "Away Kit",
                               awayKitI: "https://i.imgur.com/33cRigT.png",
                               thirdKit: "Third Kit",
-                              thirdKitI: "loading....",
+                              thirdKitI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
                               gkHome: "Gk Home",
-                              gkHomeI: "loading....",
+                              gkHomeI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
                               gkaway: "Gk Away Kit",
-                              gkawayI: "loading....",
+                              gkawayI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
                               gkThird: "Gk Third Kit",
-                              gkThirdI: "loading....",
+                              gkThirdI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
                               title: "INTER MILAN",
                               centeredText: "INTER MILAN Kit 21/22",
                             ),

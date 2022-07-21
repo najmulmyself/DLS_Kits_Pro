@@ -123,7 +123,8 @@ class PremierLeague extends StatelessWidget {
                               gkaway: "Gk Away",
                               gkawayI: "https://i.imgur.com/8unQ0Os.png",
                               gkThird: "Gk Third",
-                              gkThirdI: "loading.....",
+                              gkThirdI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
                             ),
                           ),
                         );
@@ -158,7 +159,8 @@ class PremierLeague extends StatelessWidget {
                               gkaway: "Gk Away",
                               gkawayI: "https://i.imgur.com/GOTNA4p.png",
                               gkThird: "Gk Third",
-                              gkThirdI: "loading.....",
+                              gkThirdI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
                             ),
                           ),
                         );
@@ -234,7 +236,8 @@ class PremierLeague extends StatelessWidget {
                               gkaway: "Gk Away",
                               gkawayI: "https://i.imgur.com/Hazriv9.png",
                               gkThird: "Gk Third",
-                              gkThirdI: "loading.....",
+                              gkThirdI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
                             ),
                           ),
                         );
