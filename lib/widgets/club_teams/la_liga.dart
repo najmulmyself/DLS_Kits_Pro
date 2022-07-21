@@ -153,7 +153,14 @@ class LaLiga extends StatelessWidget {
                               thirdKitI:
                                   "https://i.ibb.co/kGzPXTW/Bar-a-3-2023.png",
                               gkHome: "Gk Home",
-                              gkHomeI: "",
+                              gkHomeI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
+                              gkaway: "Gk Away",
+                              gkawayI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
+                              gkThird: "Gk Third",
+                              gkThirdI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
                             ),
                           ),
                         );
@@ -272,7 +279,8 @@ class LaLiga extends StatelessWidget {
                               gkaway: "Gk Away",
                               gkawayI: "https://i.imgur.com/qpFbaaX.png",
                               gkThird: "Gk Third",
-                              gkThirdI: "loading.....",
+                              gkThirdI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
                             ),
                           ),
                         );
@@ -306,9 +314,11 @@ class LaLiga extends StatelessWidget {
                               gkHome: "Gk Home",
                               gkHomeI: "https://i.imgur.com/wa9ZiaE.png",
                               gkaway: "Gk Away",
-                              gkawayI: "loading.....",
+                              gkawayI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
                               gkThird: "Gk Third",
-                              gkThirdI: "loading.....",
+                              gkThirdI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
                             ),
                           ),
                         );

@@ -34,8 +34,7 @@ class PremierLeague extends StatelessWidget {
                               logo: "https://i.imgur.com/fLQ27h0.png",
                               centeredText: "CHELSEA KIT 19/20",
                               homeKit: "Home Kit",
-                              homeKitI:
-                                  "https://i.imgur.com/NLaq0C9.png",
+                              homeKitI: "https://i.imgur.com/NLaq0C9.png",
                               awayKit: "Away Kit",
                               awayKitI: "https://i.imgur.com/YtWMIJW.png",
                               thirdKit: "Third Kit",
@@ -79,9 +78,11 @@ class PremierLeague extends StatelessWidget {
                               gkHome: "Gk Home",
                               gkHomeI: "https://i.ibb.co/BjHxnVM/p4.png",
                               gkaway: "Gk Away",
-                              gkawayI: "loading.....",
+                              gkawayI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
                               gkThird: "Gk Third",
-                              gkThirdI: "loading.....",
+                              gkThirdI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
                             ),
                           ),
                         );
@@ -167,8 +168,6 @@ class PremierLeague extends StatelessWidget {
                       ),
                     ),
                   ),
-                  
-                  
                 ],
               ),
             ),
@@ -245,8 +244,6 @@ class PremierLeague extends StatelessWidget {
                       ),
                     ),
                   ),
-                  
-                  
                 ],
               ),
             ),
@@ -265,8 +262,7 @@ class PremierLeague extends StatelessWidget {
                           MaterialPageRoute(
                             builder: (ctx) => KitPage(
                               title: "MAN CITY",
-                              logo:
-                                  "https://i.imgur.com/jyADaVi.png",
+                              logo: "https://i.imgur.com/jyADaVi.png",
                               centeredText: "MAN CITY KIT 19/20",
                               homeKit: "Home Kit",
                               homeKitI: "https://i.imgur.com/TkARFe9.png",
@@ -301,8 +297,7 @@ class PremierLeague extends StatelessWidget {
                           MaterialPageRoute(
                             builder: (ctx) => KitPage(
                               title: "MAN CITY",
-                              logo:
-                                  "https://i.imgur.com/dIVSV2G.png",
+                              logo: "https://i.imgur.com/dIVSV2G.png",
                               centeredText: "MAN CITY KIT 20/21",
                               homeKit: "Home Kit",
                               homeKitI: "https://i.imgur.com/fF1i7u0.png",
@@ -325,8 +320,6 @@ class PremierLeague extends StatelessWidget {
                       ),
                     ),
                   ),
-                  
-                  
                 ],
               ),
             ),
@@ -344,22 +337,28 @@ class PremierLeague extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                             builder: (ctx) => KitPage(
-                              title: "Man City 21/22",
+                              title: "MAN CITY",
                               logo:
                                   "https://i.ibb.co/Zdcm6BC/Hassan360-Logo.png",
                               centeredText: "Man City KIT 21/22",
                               homeKit: "Home Kit",
-                              homeKitI: "https://i.ibb.co/58mySm2/Hassan360-Kit.png",
+                              homeKitI:
+                                  "https://i.ibb.co/58mySm2/Hassan360-Kit.png",
                               awayKit: "Away Kit",
-                              awayKitI: "https://i.ibb.co/RpQrjKb/Hassan360-Kit.png",
+                              awayKitI:
+                                  "https://i.ibb.co/RpQrjKb/Hassan360-Kit.png",
                               thirdKit: "Third Kit",
-                              thirdKitI: "https://i.ibb.co/NFKhD37/Hassan360-Kit.png",
+                              thirdKitI:
+                                  "https://i.ibb.co/NFKhD37/Hassan360-Kit.png",
                               gkHome: "Gk Home",
-                              gkHomeI: "https://i.ibb.co/VBBQkjt/Hassan360-Kit.png",
+                              gkHomeI:
+                                  "https://i.ibb.co/VBBQkjt/Hassan360-Kit.png",
                               gkaway: "Gk Away",
-                              gkawayI: "https://i.ibb.co/x2LHJzB/Hassan360-Kit.png",
+                              gkawayI:
+                                  "https://i.ibb.co/x2LHJzB/Hassan360-Kit.png",
                               gkThird: "Gk Third",
-                              gkThirdI: "https://i.ibb.co/Lk1YZqd/Hassan360-Kit.png",
+                              gkThirdI:
+                                  "https://i.ibb.co/Lk1YZqd/Hassan360-Kit.png",
                             ),
                           ),
                         );
