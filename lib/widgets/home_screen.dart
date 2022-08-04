@@ -61,70 +61,62 @@ class _HomeScreenState extends State<HomeScreen> {
       body: SafeArea(
         child: Column(
           children: [
-            Column(
+            Container(
+              height: 20,
+              width: double.infinity,
+              child: Text('Hello'),
+            ),
+            ListView(
               children: [
-                SizedBox(
-                  height: 100,
-                  width: double.infinity,
-                  child: AdWidget(
-                    ad: myBanner,
-                  ),
+                GestureDetector(
+                  onTap: () {
+                    // var url = 'https://flutter.dev';
+                    // launchURL() async {
+                    //   if (await canLaunch(url)) {
+                    //     await launch(url);
+                    //   } else {
+                    //     throw 'Could not launch $url';
+                    //   }
+                    // }
+
+                    launchURL();
+                  },
+                  child: Image.asset('assets/images/0001.png'),
+                ),
+                Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 20, vertical: 8.0),
+                  child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (ctx) => ClubTeam(),
+                          ),
+                        );
+                      },
+                      child: Image.asset('assets/images/1.png')),
+                ),
+                Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 20, vertical: 8.0),
+                  child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (ctx) => NationalKits(),
+                          ),
+                        );
+                      },
+                      child: Image.asset('assets/images/2.png')),
+                ),
+                Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 20, vertical: 8.0),
+                  child: Image.asset('assets/images/3.png'),
                 ),
               ],
-            ),
-            SingleChildScrollView(
-              child: Column(
-                children: [
-                  GestureDetector(
-                    onTap: () {
-                      // var url = 'https://flutter.dev';
-                      // launchURL() async {
-                      //   if (await canLaunch(url)) {
-                      //     await launch(url);
-                      //   } else {
-                      //     throw 'Could not launch $url';
-                      //   }
-                      // }
-
-                      launchURL();
-                    },
-                    child: Image.asset('assets/images/0001.png'),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 20, vertical: 8.0),
-                    child: GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (ctx) => ClubTeam(),
-                            ),
-                          );
-                        },
-                        child: Image.asset('assets/images/1.png')),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 20, vertical: 8.0),
-                    child: GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (ctx) => NationalKits(),
-                            ),
-                          );
-                        },
-                        child: Image.asset('assets/images/2.png')),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 20, vertical: 8.0),
-                    child: Image.asset('assets/images/3.png'),
-                  ),
-                ],
-              ),
             ),
           ],
         ),
