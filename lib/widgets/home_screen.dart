@@ -59,10 +59,21 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       // drawer: Drawer(),
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              Column(
+        child: Column(
+          children: [
+            Column(
+              children: [
+                SizedBox(
+                  height: 100,
+                  width: double.infinity,
+                  child: AdWidget(
+                    ad: myBanner,
+                  ),
+                ),
+              ],
+            ),
+            SingleChildScrollView(
+              child: Column(
                 children: [
                   GestureDetector(
                     onTap: () {
@@ -112,34 +123,10 @@ class _HomeScreenState extends State<HomeScreen> {
                         horizontal: 20, vertical: 8.0),
                     child: Image.asset('assets/images/3.png'),
                   ),
-                  // SizedBox(
-                  //   height: 20,
-                  //   width: double.infinity,
-                  //   child: Text('Hello'),
-                  // ),
                 ],
               ),
-              // SizedBox(
-              //   height: 20,
-              //   width: double.infinity,
-              //   child: Text('Hello'),
-              // ),
-              // SizedBox(
-              //   height: 100,
-              //   width: double.infinity,
-              //   child: AdWidget(
-              //     ad: myBanner,
-              //   ),
-              // ),
-              //  SizedBox(
-              //   //  height: 100,
-              //    width: double.infinity,
-              //    child: AdWidget(
-              //      ad: myBanner,
-              //    ),
-              //  ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
