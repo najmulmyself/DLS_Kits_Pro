@@ -1,6 +1,5 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:dls_kits_pro/widgets/club_kits.dart';
 import 'package:dls_kits_pro/widgets/club_team.dart';
 import 'package:dls_kits_pro/widgets/national_kits.dart';
 import 'package:flutter/material.dart';
@@ -59,64 +58,51 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       // drawer: Drawer(),
       body: SafeArea(
-        child: Column(
+        child: ListView(
           children: [
-            Container(
-              height: 20,
-              width: double.infinity,
-              child: Text('Hello'),
+            GestureDetector(
+              onTap: () {
+                launchURL();
+              },
+              child: Image.asset('assets/images/0001.png'),
             ),
-            ListView(
-              children: [
-                GestureDetector(
+            Padding(
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 20, vertical: 8.0),
+              child: GestureDetector(
                   onTap: () {
-                    // var url = 'https://flutter.dev';
-                    // launchURL() async {
-                    //   if (await canLaunch(url)) {
-                    //     await launch(url);
-                    //   } else {
-                    //     throw 'Could not launch $url';
-                    //   }
-                    // }
-
-                    launchURL();
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (ctx) => ClubTeam(),
+                      ),
+                    );
                   },
-                  child: Image.asset('assets/images/0001.png'),
-                ),
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 20, vertical: 8.0),
-                  child: GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (ctx) => ClubTeam(),
-                          ),
-                        );
-                      },
-                      child: Image.asset('assets/images/1.png')),
-                ),
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 20, vertical: 8.0),
-                  child: GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (ctx) => NationalKits(),
-                          ),
-                        );
-                      },
-                      child: Image.asset('assets/images/2.png')),
-                ),
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 20, vertical: 8.0),
-                  child: Image.asset('assets/images/3.png'),
-                ),
-              ],
+                  child: Image.asset('assets/images/1.png')),
+            ),
+            Padding(
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 20, vertical: 8.0),
+              child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (ctx) => NationalKits(),
+                      ),
+                    );
+                  },
+                  child: Image.asset('assets/images/2.png')),
+            ),
+            SizedBox(
+              height:100,
+              width: double.infinity,
+              child: AdWidget(ad: myBanner),
+            ),
+            Padding(
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 20, vertical: 8.0),
+              child: Image.asset('assets/images/3.png'),
             ),
           ],
         ),
