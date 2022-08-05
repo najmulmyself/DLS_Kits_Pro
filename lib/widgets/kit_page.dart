@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 import 'kit.dart';
 
-class KitPage extends StatelessWidget {
+class KitPage extends StatefulWidget {
   // const KitPage({Key? key}) : super(key: key);
   final String? title,
       centeredText,
@@ -41,11 +42,36 @@ class KitPage extends StatelessWidget {
   });
 
   @override
+  State<KitPage> createState() => _KitPageState();
+}
+
+class _KitPageState extends State<KitPage> {
+  final Future<void> myInterstitialAd = InterstitialAd.load(
+      adUnitId: 'ca-app-pub-3940256099942544/1033173712',
+      request: AdRequest(),
+      adLoadCallback: InterstitialAdLoadCallback(
+        onAdLoaded: (InterstitialAd ad) {
+          // Keep a reference to the ad so you can show it later.
+          // this._interstitialAd = ad;
+          ad.show();
+        },
+        onAdFailedToLoad: (LoadAdError error) {
+          print('InterstitialAd failed to load: $error');
+        },
+      ));
+  @override
+  void initState() {
+    myInterstitialAd;
+    // TODO: implement initState
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     // print('Hello kit name: ');
     return Scaffold(
       appBar: AppBar(
-        title: Text(title!),
+        title: Text(widget.title!),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -58,7 +84,7 @@ class KitPage extends StatelessWidget {
                 color: Colors.red,
                 child: Center(
                   child: Text(
-                    centeredText!, //Psg kit 20/21
+                    widget.centeredText!, //Psg kit 20/21
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -74,38 +100,38 @@ class KitPage extends StatelessWidget {
             // ),
             Kit(
               kitName: 'Logo',
-              urlText: logo,
+              urlText: widget.logo,
             ),
             Kit(
-              kitName: homeKit,
-              urlText: homeKitI,
+              kitName: widget.homeKit,
+              urlText: widget.homeKitI,
 
               // urlText: "imgur.com/6u8xm5fj.png",
             ),
             Divider(height: 39, thickness: 3),
             Kit(
-              kitName: awayKit,
-              urlText: awayKitI,
+              kitName: widget.awayKit,
+              urlText: widget.awayKitI,
             ),
             Divider(height: 39, thickness: 3),
             Kit(
-              kitName: thirdKit,
-              urlText: thirdKitI,
+              kitName: widget.thirdKit,
+              urlText: widget.thirdKitI,
             ),
             Divider(height: 39, thickness: 3),
             Kit(
-              kitName: gkHome,
-              urlText: gkHomeI,
+              kitName: widget.gkHome,
+              urlText: widget.gkHomeI,
             ),
             Divider(height: 39, thickness: 3),
             Kit(
-              kitName: gkaway,
-              urlText: gkawayI,
+              kitName: widget.gkaway,
+              urlText: widget.gkawayI,
             ),
             Divider(height: 39, thickness: 3),
             Kit(
-              kitName: gkThird,
-              urlText: gkThirdI,
+              kitName: widget.gkThird,
+              urlText: widget.gkThirdI,
             ),
           ],
         ),

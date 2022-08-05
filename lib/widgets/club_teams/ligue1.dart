@@ -45,6 +45,7 @@ class Ligue1 extends StatelessWidget {
                                 centeredText: "PSG Kit 19/20"),
                           ),
                         );
+                        
                       },
                       child: Image(
                         image: AssetImage('assets/clubTeams/psg19.png'),
