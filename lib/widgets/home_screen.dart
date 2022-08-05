@@ -49,7 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     // TODO: implement initState
-
+    myBanner.dispose();
     myBanner.load();
   }
 
@@ -80,6 +80,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   },
                   child: Image.asset('assets/images/1.png')),
             ),
+            SizedBox(
+              height: 100,
+              width: double.infinity,
+              child: AdWidget(ad: myBanner),
+            ),
             Padding(
               padding:
                   const EdgeInsets.symmetric(horizontal: 20, vertical: 8.0),
@@ -93,11 +98,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     );
                   },
                   child: Image.asset('assets/images/2.png')),
-            ),
-            SizedBox(
-              height:100,
-              width: double.infinity,
-              child: AdWidget(ad: myBanner),
             ),
             Padding(
               padding:
