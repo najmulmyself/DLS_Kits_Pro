@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class Kit extends StatefulWidget {
   final String? urlText, kitName;
@@ -15,6 +16,22 @@ class Kit extends StatefulWidget {
 }
 
 class _KitState extends State<Kit> {
+
+ final myRewarded = RewardedAd.load(
+  adUnitId: 'ca-app-pub-3940256099942544/5224354917',
+  request: AdRequest(),
+  rewardedAdLoadCallback: RewardedAdLoadCallback(
+    onAdLoaded: (RewardedAd ad) {
+      print('$ad loaded.');
+      // Keep a reference to the ad so you can show it later.
+      // this._rewardedAd = ad;
+      ad.show(onUserEarnedReward: onUserEarnedReward)
+    },
+    onAdFailedToLoad: (LoadAdError error) {
+      print('RewardedAd failed to load: $error');
+    },
+));
+
   @override
   Widget build(BuildContext context) {
     // print('Kit : $kitName');
@@ -72,6 +89,7 @@ class _KitState extends State<Kit> {
             width: double.infinity,
             child: ElevatedButton(
               onPressed: () {
+                
                 Clipboard.setData(
                   ClipboardData(text: widget.urlText),
                 );
