@@ -16,21 +16,52 @@ class Kit extends StatefulWidget {
 }
 
 class _KitState extends State<Kit> {
+  RewardedAd? _rewardedAD;
 
- final myRewarded = RewardedAd.load(
-  adUnitId: 'ca-app-pub-3940256099942544/5224354917',
-  request: AdRequest(),
-  rewardedAdLoadCallback: RewardedAdLoadCallback(
-    onAdLoaded: (RewardedAd ad) {
-      print('$ad loaded.');
-      // Keep a reference to the ad so you can show it later.
-      // this._rewardedAd = ad;
-      ad.show(onUserEarnedReward: onUserEarnedReward)
-    },
-    onAdFailedToLoad: (LoadAdError error) {
-      print('RewardedAd failed to load: $error');
-    },
-));
+  void createRewardedAd() {
+    RewardedAd.load(
+        adUnitId: 'ca-app-pub-3940256099942544/5224354917',
+        request: AdRequest(),
+        rewardedAdLoadCallback: RewardedAdLoadCallback(
+          onAdLoaded: (RewardedAd ad) {
+            print('$ad loaded.');
+            // Keep a reference to the ad so you can show it later.
+            // this._rewardedAd = ad;
+            // ad.show(onUserEarnedReward: null)
+            setState(() {
+              _rewardedAD = ad;
+            });
+          },
+          onAdFailedToLoad: (LoadAdError error) {
+            print('RewardedAd failed to load: $error');
+          },
+        ));
+  }
+
+  showRewarderAD() {
+    _rewardedAD!.fullScreenContentCallback = FullScreenContentCallback(
+      onAdShowedFullScreenContent: (RewardedAd ad) =>
+          print('$ad onAdShowedFullScreenContent.'),
+      onAdDismissedFullScreenContent: (RewardedAd ad) {
+        print('$ad onAdDismissedFullScreenContent.');
+        ad.dispose();
+        createRewardedAd();
+      },
+      onAdFailedToShowFullScreenContent: (RewardedAd ad, AdError error) {
+        print('$ad onAdFailedToShowFullScreenContent: $error');
+        ad.dispose();
+        createRewardedAd();
+      },
+      onAdImpression: (RewardedAd ad) => print('$ad impression occurred.'),
+    );
+    _rewardedAD!.show(
+      onUserEarnedReward: (ad, reward) {
+        print('You earned $reward');
+        ad.dispose();
+        createRewardedAd();
+      },
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -89,7 +120,9 @@ class _KitState extends State<Kit> {
             width: double.infinity,
             child: ElevatedButton(
               onPressed: () {
-                
+                createRewardedAd();
+                showRewarderAD();
+                // }));
                 Clipboard.setData(
                   ClipboardData(text: widget.urlText),
                 );
