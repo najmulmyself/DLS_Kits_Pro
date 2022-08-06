@@ -18,9 +18,9 @@
     </queries> -->
     <!-- heres -->
    <application
-        android:label="dls_kits_pro"
+        android:label="DLS Kits Pro"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:exported="true"
