@@ -120,6 +120,7 @@ class _KitState extends State<Kit> {
             width: double.infinity,
             child: ElevatedButton(
               onPressed: () {
+                // it takes second click to show ad
                 createRewardedAd();
                 showRewarderAD();
                 // }));
