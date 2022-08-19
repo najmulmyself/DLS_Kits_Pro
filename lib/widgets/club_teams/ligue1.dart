@@ -45,7 +45,6 @@ class Ligue1 extends StatelessWidget {
                                 centeredText: "PSG Kit 19/20"),
                           ),
                         );
-                        
                       },
                       child: Image(
                         image: AssetImage('assets/clubTeams/psg19.png'),
@@ -118,13 +117,52 @@ class Ligue1 extends StatelessWidget {
                               gkThird: "Gk Third Kit",
                               gkThirdI: "https://i.imgur.com/lVrHyjU.png",
                               title: "PSG",
-                              centeredText: "PSG Kit 20/21",
+                              centeredText: "PSG Kit 21/22",
                             ),
                           ),
                         );
                       },
                       child: Image(
                         image: AssetImage('assets/clubTeams/psg21.png'),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (ctx) => KitPage(
+                              logo: "https://i.imgur.com/4nwOlH5.png",
+                              homeKit: "Home Kit",
+                              homeKitI:
+                                  "https://i.ibb.co/kqpQPC7/Hassan360.png",
+                              awayKit: "Away Kit",
+                              awayKitI:
+                                  "https://i.ibb.co/Rhfv1Tm/Hassan360.png",
+                              thirdKit: "Third Kit",
+                              thirdKitI:
+                                  "https://i.ibb.co/SXnm0Rk/Picsart-22-02-22-12-31-57-215.jpg",
+                              gkHome: "Gk Home",
+                              gkHomeI: "https://i.ibb.co/ZJF5HqC/Hassan360.png",
+                              gkaway: "Gk Away Kit",
+                              gkawayI: "https://i.ibb.co/7VWKN0s/Hassan360.png",
+                              gkThird: "Gk Third Kit",
+                              gkThirdI:
+                                  "https://i.ibb.co/7VWKN0s/Hassan360.png",
+                              title: "PSG",
+                              centeredText: "PSG Kit 22/23",
+                            ),
+                          ),
+                        );
+                      },
+                      child: Image(
+                        image: AssetImage('assets/clubTeams/psg22.png'),
                       ),
                     ),
                   ),
