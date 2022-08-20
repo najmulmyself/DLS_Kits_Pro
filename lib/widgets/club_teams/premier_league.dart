@@ -187,83 +187,6 @@ class PremierLeague extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                             builder: (ctx) => KitPage(
-                              title: "MAN UTD",
-                              logo: "https://i.imgur.com/iSCgujY.png",
-                              centeredText: "MAN UTD KIT 19/20",
-                              homeKit: "Home Kit",
-                              homeKitI: "https://i.imgur.com/mu4gxCA.png",
-                              awayKit: "Away Kit",
-                              awayKitI: "https://i.imgur.com/sIxzPdu.png",
-                              thirdKit: "Third Kit",
-                              thirdKitI: "https://i.imgur.com/xYNAhdo.png",
-                              gkHome: "Gk Home",
-                              gkHomeI: "https://i.imgur.com/K9oBqnd.png",
-                              gkaway: "Gk Away",
-                              gkawayI: "https://i.imgur.com/Uzi8E9H.png",
-                              gkThird: "Gk Third",
-                              gkThirdI: "https://i.imgur.com/v4PTAP3.png",
-                            ),
-                          ),
-                        );
-                      },
-                      child: Image(
-                        image: AssetImage('assets/clubTeams/man_u19.png'),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Expanded(
-                    flex: 1,
-                    child: GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (ctx) => KitPage(
-                              title: "MAN UTD",
-                              logo: "https://i.imgur.com/iSCgujY.png",
-                              centeredText: "MAN UTD KIT 21/22",
-                              homeKit: "Home Kit",
-                              homeKitI: "https://i.imgur.com/eCv0xlS.png",
-                              awayKit: "Away Kit",
-                              awayKitI: "https://i.imgur.com/LzJ9tkG.png",
-                              thirdKit: "Third Kit",
-                              thirdKitI: "https://i.imgur.com/RU30SD3.png",
-                              gkHome: "Gk Home",
-                              gkHomeI: "https://i.imgur.com/goygHFl.png",
-                              gkaway: "Gk Away",
-                              gkawayI: "https://i.imgur.com/Hazriv9.png",
-                              gkThird: "Gk Third",
-                              gkThirdI:
-                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
-                            ),
-                          ),
-                        );
-                      },
-                      child: Image(
-                        image: AssetImage('assets/clubTeams/man_u21.png'),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              margin: EdgeInsets.only(top: 5, right: 20, left: 20),
-              width: double.infinity,
-              height: 300,
-              child: Row(
-                children: [
-                  Expanded(
-                    flex: 1,
-                    child: GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (ctx) => KitPage(
                               title: "MAN CITY",
                               logo: "https://i.imgur.com/jyADaVi.png",
                               centeredText: "MAN CITY KIT 19/20",
@@ -368,6 +291,122 @@ class PremierLeague extends StatelessWidget {
                       },
                       child: Image(
                         image: AssetImage('assets/clubTeams/man_city21.png'),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (ctx) => KitPage(
+                              title: "MAN UTD",
+                              logo: "https://i.imgur.com/iSCgujY.png",
+                              centeredText: "MAN UTD KIT 19/20",
+                              homeKit: "Home Kit",
+                              homeKitI: "https://i.imgur.com/mu4gxCA.png",
+                              awayKit: "Away Kit",
+                              awayKitI: "https://i.imgur.com/sIxzPdu.png",
+                              thirdKit: "Third Kit",
+                              thirdKitI: "https://i.imgur.com/xYNAhdo.png",
+                              gkHome: "Gk Home",
+                              gkHomeI: "https://i.imgur.com/K9oBqnd.png",
+                              gkaway: "Gk Away",
+                              gkawayI: "https://i.imgur.com/Uzi8E9H.png",
+                              gkThird: "Gk Third",
+                              gkThirdI: "https://i.imgur.com/v4PTAP3.png",
+                            ),
+                          ),
+                        );
+                      },
+                      child: Image(
+                        image: AssetImage('assets/clubTeams/man_u19.png'),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 5, right: 20, left: 20),
+              width: double.infinity,
+              height: 300,
+              child: Row(
+                children: [
+                  Expanded(
+                    flex: 1,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (ctx) => KitPage(
+                              title: "MAN UTD",
+                              logo: "https://i.imgur.com/iSCgujY.png",
+                              centeredText: "MAN UTD KIT 21/22",
+                              homeKit: "Home Kit",
+                              homeKitI: "https://i.imgur.com/eCv0xlS.png",
+                              awayKit: "Away Kit",
+                              awayKitI: "https://i.imgur.com/LzJ9tkG.png",
+                              thirdKit: "Third Kit",
+                              thirdKitI: "https://i.imgur.com/RU30SD3.png",
+                              gkHome: "Gk Home",
+                              gkHomeI: "https://i.imgur.com/goygHFl.png",
+                              gkaway: "Gk Away",
+                              gkawayI: "https://i.imgur.com/Hazriv9.png",
+                              gkThird: "Gk Third",
+                              gkThirdI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
+                            ),
+                          ),
+                        );
+                      },
+                      child: Image(
+                        image: AssetImage('assets/clubTeams/man_u21.png'),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (ctx) => KitPage(
+                              title: "MAN UTD",
+                              logo: "https://i.imgur.com/iSCgujY.png",
+                              centeredText: "MAN UTD KIT 22/23",
+                              homeKit: "Home Kit",
+                              homeKitI:
+                                  "https://i.ibb.co/BNgfN5N/Hassan360.png",
+                              awayKit: "Away Kit",
+                              awayKitI:
+                                  "https://i.ibb.co/F6BFX4W/Hassan360.png",
+                              thirdKit: "Third Kit",
+                              thirdKitI:
+                                  "https://i.ibb.co/kDQm8zS/Hassan360.png",
+                              gkHome: "Gk Home",
+                              gkHomeI: "https://i.ibb.co/JvMCVL7/Hassan360.png",
+                              gkaway: "Gk Away",
+                              gkawayI: "https://i.ibb.co/3ByTpfR/Hassan360.png",
+                              gkThird: "Gk Third",
+                              gkThirdI:
+                                  "https://i.ibb.co/jLkgHZH/Hassan360.png",
+                            ),
+                          ),
+                        );
+                      },
+                      child: Image(
+                        image: AssetImage('assets/clubTeams/man_u22.png'),
                       ),
                     ),
                   ),

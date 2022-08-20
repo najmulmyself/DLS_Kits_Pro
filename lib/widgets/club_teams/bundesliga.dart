@@ -134,6 +134,46 @@ class Bundesliga extends StatelessWidget {
                       ),
                     ),
                   ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (ctx) => KitPage(
+                              logo:
+                                  "https://i.ibb.co/wsGPfXW/Borussia-Dortmund-dls-logo.png",
+                              homeKit: "Home Kit",
+                              homeKitI:
+                                  "https://i.ibb.co/vQRgF0g/Hassan360.png",
+                              awayKit: "Away Kit",
+                              awayKitI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
+                              thirdKit: "Third Kit",
+                              thirdKitI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
+                              gkHome: "Gk Home",
+                              gkHomeI: "https://i.ibb.co/2yLCKYd/Hassan360.png",
+                              gkaway: "Gk Away Kit",
+                              gkawayI: "https://i.ibb.co/JWLCd6h/Hassan360.png",
+                              gkThird: "Gk Third Kit",
+                              gkThirdI:
+                                  "https://i.ibb.co/q7gJjhM/Hassan360.png",
+                              title: "BORRUSIA DORTMUND",
+                              centeredText: "BORRUSIA DORTMUND 22/23",
+                            ),
+                          ),
+                        );
+                      },
+                      child: Image(
+                        image: AssetImage('assets/clubTeams/dortmund22.png'),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),

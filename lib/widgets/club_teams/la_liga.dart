@@ -145,22 +145,20 @@ class LaLiga extends StatelessWidget {
                               centeredText: "BARCELONA KIT 22/23",
                               homeKit: "Home Kit",
                               homeKitI:
-                                  "https://i.ibb.co/HPBRDRx/Bar-a-1-2023.png",
+                                  "https://i.ibb.co/N7d7jT8/Hassan360.png.png",
                               awayKit: "Away Kit",
                               awayKitI:
-                                  "https://i.ibb.co/wKfgQnL/Bar-a-2-2023.png",
+                                  "https://i.ibb.co/3ckJmw7/Hassan360.png",
                               thirdKit: "Third Kit",
                               thirdKitI:
-                                  "https://i.ibb.co/kGzPXTW/Bar-a-3-2023.png",
+                                  "https://i.ibb.co/mTz2PZb/Hassan360.png",
                               gkHome: "Gk Home",
-                              gkHomeI:
-                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
+                              gkHomeI: "https://i.ibb.co/L6xhWcy/Hassan360.png",
                               gkaway: "Gk Away",
-                              gkawayI:
-                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
+                              gkawayI: "https://i.ibb.co/2s7dv9V/Hassan360.png",
                               gkThird: "Gk Third",
                               gkThirdI:
-                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
+                                  "https://i.ibb.co/2dQ8gVN/Hassan360.png",
                             ),
                           ),
                         );
@@ -293,6 +291,51 @@ class LaLiga extends StatelessWidget {
                   SizedBox(
                     width: 10,
                   ),
+                  Expanded(
+                    flex: 1,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (ctx) => KitPage(
+                              title: "REAL MADRID",
+                              logo: "https://i.imgur.com/Vz2HtKe.png",
+                              centeredText: "REAL MADRID KIT 22/23",
+                              homeKit: "Home Kit",
+                              homeKitI:
+                                  "https://i.ibb.co/L6bN0JL/Hassan360.png",
+                              awayKit: "Away Kit",
+                              awayKitI:
+                                  "https://i.ibb.co/wWZg1v4/Hassan360.png",
+                              thirdKit: "Third Kit",
+                              thirdKitI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
+                              gkHome: "Gk Home",
+                              gkHomeI: "https://i.ibb.co/qrQBntW/Hassan360.png",
+                              gkaway: "Gk Away",
+                              gkawayI: "https://i.ibb.co/cQwBtvF/Hassan360.png",
+                              gkThird: "Gk Third",
+                              gkThirdI:
+                                  "https://i.ibb.co/Z115mWJ/Hassan360.png",
+                            ),
+                          ),
+                        );
+                      },
+                      child: Image(
+                        image: AssetImage('assets/clubTeams/realmadrid22.png'),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 5, right: 20, left: 20),
+              width: double.infinity,
+              height: 300,
+              child: Row(
+                children: [
                   Expanded(
                     flex: 1,
                     child: GestureDetector(

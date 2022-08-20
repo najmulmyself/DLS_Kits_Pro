@@ -147,7 +147,7 @@ class Ligue1 extends StatelessWidget {
                                   "https://i.ibb.co/Rhfv1Tm/Hassan360.png",
                               thirdKit: "Third Kit",
                               thirdKitI:
-                                  "https://i.ibb.co/SXnm0Rk/Picsart-22-02-22-12-31-57-215.jpg",
+                                  "https://i.imgur.com/ZYJNOLl.png",
                               gkHome: "Gk Home",
                               gkHomeI: "https://i.ibb.co/ZJF5HqC/Hassan360.png",
                               gkaway: "Gk Away Kit",
