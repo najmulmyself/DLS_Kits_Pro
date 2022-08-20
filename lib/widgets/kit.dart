@@ -16,9 +16,18 @@ class Kit extends StatefulWidget {
 }
 
 class _KitState extends State<Kit> {
+  @override
+  void initState() {
+    createRewardedAd();
+    // WE CALL IT ON INITSTATE TO AVOID THE MULTIPLE CLICK ON THE BUTTON TO INIT CREATE REWARDED AD
+    // TODO: implement initState
+    super.initState();
+  }
+
   RewardedAd? _rewardedAD;
 
   void createRewardedAd() {
+    // showRewarderAD();
     RewardedAd.load(
         adUnitId: 'ca-app-pub-3940256099942544/5224354917',
         request: AdRequest(),
@@ -39,6 +48,7 @@ class _KitState extends State<Kit> {
   }
 
   showRewarderAD() {
+    // createRewardedAd();
     _rewardedAD!.fullScreenContentCallback = FullScreenContentCallback(
       onAdShowedFullScreenContent: (RewardedAd ad) =>
           print('$ad onAdShowedFullScreenContent.'),
@@ -120,13 +130,24 @@ class _KitState extends State<Kit> {
             width: double.infinity,
             child: ElevatedButton(
               onPressed: () {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text('URL Copied Successfully'),
+                  ),
+                );
+                // DO NOT NEED TO SHOW SCAFFOLD MESSENGER TO CLICK AGAIN
                 // it takes second click to show ad
+                // GO TO INIT STATE TO AVOID THE MULTIPLE CLICK ON THE BUTTON TO INIT CREATE REWARDED AD
+
+
+                
                 createRewardedAd();
                 showRewarderAD();
                 // }));
                 Clipboard.setData(
                   ClipboardData(text: widget.urlText),
                 );
+
                 showDialog(
                   context: context,
                   builder: (context) => AlertDialog(
