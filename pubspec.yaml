@@ -37,6 +37,7 @@ dependencies:
   url_launcher: ^6.0.20
   google_mobile_ads: ^2.0.0
   flutter_launcher_icons: ^0.9.3
+  flutter_native_splash: ^2.2.7
 
 dev_dependencies:
   flutter_test:
