@@ -38,6 +38,7 @@ dependencies:
   google_mobile_ads: ^2.0.0
   flutter_launcher_icons: ^0.9.3
   flutter_native_splash: ^2.2.7
+  google_fonts: ^3.0.1
 
 dev_dependencies:
   flutter_test:
