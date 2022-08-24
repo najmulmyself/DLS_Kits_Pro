@@ -109,84 +109,6 @@ class PremierLeague extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                             builder: (ctx) => KitPage(
-                              title: "LIVERPOOL",
-                              logo: "https://i.imgur.com/NwuM7iw.png",
-                              centeredText: "LIVERPOOL KIT 19/20",
-                              homeKit: "Home Kit",
-                              homeKitI: "https://i.imgur.com/YmL9zHX.png",
-                              awayKit: "Away Kit",
-                              awayKitI: "https://i.imgur.com/1Om1Zec.png",
-                              thirdKit: "Third Kit",
-                              thirdKitI: "https://i.imgur.com/wXPWkxb.png",
-                              gkHome: "Gk Home",
-                              gkHomeI: "https://i.imgur.com/h9aLQJA.png",
-                              gkaway: "Gk Away",
-                              gkawayI: "https://i.imgur.com/8unQ0Os.png",
-                              gkThird: "Gk Third",
-                              gkThirdI:
-                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
-                            ),
-                          ),
-                        );
-                      },
-                      child: Image(
-                        image: AssetImage('assets/clubTeams/liverpool19.png'),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Expanded(
-                    flex: 1,
-                    child: GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (ctx) => KitPage(
-                              title: "LIVERPOOL",
-                              logo: "https://i.imgur.com/NwuM7iw.png",
-                              centeredText: "LIVERPOOL KIT 21/22",
-                              homeKit: "Home Kit",
-                              homeKitI: "https://i.imgur.com/v5bfwpY.png",
-                              awayKit: "Away Kit",
-                              awayKitI: "https://i.imgur.com/DBQ8g1t.png",
-                              thirdKit: "Third Kit",
-                              thirdKitI: "https://i.imgur.com/66wm1lQ.png",
-                              gkHome: "Gk Home",
-                              gkHomeI: "https://i.imgur.com/KgHuucg.png",
-                              gkaway: "Gk Away",
-                              gkawayI: "https://i.imgur.com/GOTNA4p.png",
-                              gkThird: "Gk Third",
-                              gkThirdI:
-                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
-                            ),
-                          ),
-                        );
-                      },
-                      child: Image(
-                        image: AssetImage('assets/clubTeams/liverpool21.png'),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              margin: EdgeInsets.only(top: 5, right: 20, left: 20),
-              width: double.infinity,
-              height: 300,
-              child: Row(
-                children: [
-                  Expanded(
-                    flex: 1,
-                    child: GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (ctx) => KitPage(
                               title: "MAN CITY",
                               logo: "https://i.imgur.com/jyADaVi.png",
                               centeredText: "MAN CITY KIT 19/20",
@@ -407,6 +329,129 @@ class PremierLeague extends StatelessWidget {
                       },
                       child: Image(
                         image: AssetImage('assets/clubTeams/man_u22.png'),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 5, right: 20, left: 20),
+              width: double.infinity,
+              height: 300,
+              child: Row(
+                children: [
+                  Expanded(
+                    flex: 1,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (ctx) => KitPage(
+                              title: "LIVERPOOL",
+                              logo: "https://i.imgur.com/NwuM7iw.png",
+                              centeredText: "LIVERPOOL KIT 19/20",
+                              homeKit: "Home Kit",
+                              homeKitI: "https://i.imgur.com/YmL9zHX.png",
+                              awayKit: "Away Kit",
+                              awayKitI: "https://i.imgur.com/1Om1Zec.png",
+                              thirdKit: "Third Kit",
+                              thirdKitI: "https://i.imgur.com/wXPWkxb.png",
+                              gkHome: "Gk Home",
+                              gkHomeI: "https://i.imgur.com/h9aLQJA.png",
+                              gkaway: "Gk Away",
+                              gkawayI: "https://i.imgur.com/8unQ0Os.png",
+                              gkThird: "Gk Third",
+                              gkThirdI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
+                            ),
+                          ),
+                        );
+                      },
+                      child: Image(
+                        image: AssetImage('assets/clubTeams/liverpool19.png'),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (ctx) => KitPage(
+                              title: "LIVERPOOL",
+                              logo: "https://i.imgur.com/NwuM7iw.png",
+                              centeredText: "LIVERPOOL KIT 21/22",
+                              homeKit: "Home Kit",
+                              homeKitI: "https://i.imgur.com/v5bfwpY.png",
+                              awayKit: "Away Kit",
+                              awayKitI: "https://i.imgur.com/DBQ8g1t.png",
+                              thirdKit: "Third Kit",
+                              thirdKitI: "https://i.imgur.com/66wm1lQ.png",
+                              gkHome: "Gk Home",
+                              gkHomeI: "https://i.imgur.com/KgHuucg.png",
+                              gkaway: "Gk Away",
+                              gkawayI: "https://i.imgur.com/GOTNA4p.png",
+                              gkThird: "Gk Third",
+                              gkThirdI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
+                            ),
+                          ),
+                        );
+                      },
+                      child: Image(
+                        image: AssetImage('assets/clubTeams/liverpool21.png'),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 5, right: 20, left: 20),
+              width: double.infinity,
+              height: 300,
+              child: Row(
+                children: [
+                  Expanded(
+                    flex: 1,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (ctx) => KitPage(
+                              title: "LIVERPOOL",
+                              logo: "https://i.imgur.com/NwuM7iw.png",
+                              centeredText: "LIVERPOOL KIT 21/22",
+                              homeKit: "Home Kit",
+                              homeKitI:
+                                  "https://i.ibb.co/2qYLs8N/Hassan360.png",
+                              awayKit: "Away Kit",
+                              awayKitI:
+                                  "https://i.ibb.co/H2QzSV8/Hassan360.png",
+                              thirdKit: "Third Kit",
+                              thirdKitI:
+                                  "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
+                              gkHome: "Gk Home",
+                              gkHomeI: "https://i.ibb.co/Y03r8PQ/Hassan360.png",
+                              gkaway: "Gk Away",
+                              gkawayI: "https://i.ibb.co/khqQnr3/Hassan360.png",
+                              gkThird: "Gk Third",
+                              gkThirdI:
+                                  "https://i.ibb.co/mSM89c6/Hassan360.png",
+                            ),
+                          ),
+                        );
+                      },
+                      child: Image(
+                        image: AssetImage('assets/clubTeams/liverpool22.png'),
                       ),
                     ),
                   ),

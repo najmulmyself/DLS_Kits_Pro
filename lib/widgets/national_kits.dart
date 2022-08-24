@@ -172,6 +172,38 @@ class NationalKits extends StatelessWidget {
                   },
                   child: Image.asset('assets/images/argentina.png')),
             ),
+            Padding(
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 20, vertical: 8.0),
+              child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (ctx) => KitPage(
+                          logo: "https://i.ibb.co/3WMNKDK/Hassan360-Logo.png",
+                          homeKit: "Home Kit",
+                          homeKitI: "https://i.ibb.co/ZKZLkLw/Hassan360-Kit.png",
+                          awayKit: "Away Kit",
+                          awayKitI: "https://i.ibb.co/Jj0QdtL/Hassan360-Kit.png",
+                          thirdKit: "Third Kit",
+                          thirdKitI:
+                              "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
+                          gkHome: "Gk Home",
+                          gkHomeI: "https://i.ibb.co/6Ng5yLF/Hassan360-Kit.png",
+                          gkaway: "Gk Away Kit",
+                          gkawayI: "https://i.ibb.co/gWnyyzN/Hassan360-Kit.png",
+                          gkThird: "Gk Third Kit",
+                          gkThirdI:
+                              "https://i.ibb.co/g4Qdjtn/20220704-011843.png",
+                          title: "ENGLAND",
+                          centeredText: "ENGLAND Kit",
+                        ),
+                      ),
+                    );
+                  },
+                  child: Image.asset('assets/images/england.png')),
+            ),
           ],
         ),
       ),

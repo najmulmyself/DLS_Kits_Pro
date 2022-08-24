@@ -154,7 +154,7 @@ class Ligue1 extends StatelessWidget {
                               gkawayI: "https://i.ibb.co/7VWKN0s/Hassan360.png",
                               gkThird: "Gk Third Kit",
                               gkThirdI:
-                                  "https://i.ibb.co/7VWKN0s/Hassan360.png",
+                                  "https://i.ibb.co/VvWDfj1/PSG-GK-Third.png",
                               title: "PSG",
                               centeredText: "PSG Kit 22/23",
                             ),
