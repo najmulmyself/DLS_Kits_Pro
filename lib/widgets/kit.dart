@@ -29,7 +29,7 @@ class _KitState extends State<Kit> {
   void createRewardedAd() {
     // showRewarderAD();
     RewardedAd.load(
-        adUnitId: 'ca-app-pub-3940256099942544/5224354917',
+        adUnitId: 'ca-app-pub-8941566736607757/9232693198', //test ad 'ca-app-pub-3940256099942544/5224354917',
         request: AdRequest(),
         rewardedAdLoadCallback: RewardedAdLoadCallback(
           onAdLoaded: (RewardedAd ad) {

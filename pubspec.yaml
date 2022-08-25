@@ -39,6 +39,7 @@ dependencies:
   flutter_launcher_icons: ^0.9.3
   flutter_native_splash: ^2.2.7
   google_fonts: ^3.0.1
+  change_app_package_name: ^1.1.0
 
 dev_dependencies:
   flutter_test:

@@ -1,4 +1,4 @@
-package com.example.dls_kits_pro
+package com.sakibpro.dlskits
 
 import io.flutter.embedding.android.FlutterActivity
 
