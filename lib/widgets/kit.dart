@@ -29,7 +29,8 @@ class _KitState extends State<Kit> {
   void createRewardedAd() {
     // showRewarderAD();
     RewardedAd.load(
-        adUnitId: 'ca-app-pub-8941566736607757/9232693198', //test ad 'ca-app-pub-3940256099942544/5224354917',
+        adUnitId:
+            'ca-app-pub-8941566736607757/4843919251', //test ad 'ca-app-pub-3940256099942544/5224354917',
         request: AdRequest(),
         rewardedAdLoadCallback: RewardedAdLoadCallback(
           onAdLoaded: (RewardedAd ad) {
@@ -139,8 +140,7 @@ class _KitState extends State<Kit> {
                 // it takes second click to show ad
                 // GO TO INIT STATE TO AVOID THE MULTIPLE CLICK ON THE BUTTON TO INIT CREATE REWARDED AD
 
-
-                
+                print('before ad loaded');
                 createRewardedAd();
                 showRewarderAD();
                 // }));

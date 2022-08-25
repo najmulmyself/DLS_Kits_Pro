@@ -47,7 +47,7 @@ class KitPage extends StatefulWidget {
 
 class _KitPageState extends State<KitPage> {
   final Future<void> myInterstitialAd = InterstitialAd.load(
-      adUnitId: 'ca-app-pub-3940256099942544/1033173712',
+      adUnitId: 'ca-app-pub-8941566736607757/9232693198',
       request: AdRequest(),
       adLoadCallback: InterstitialAdLoadCallback(
         onAdLoaded: (InterstitialAd ad) {

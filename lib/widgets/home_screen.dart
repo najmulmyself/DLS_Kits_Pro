@@ -25,13 +25,15 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   final BannerAd myBanner = BannerAd(
-    adUnitId: 'ca-app-pub-8941566736607757/3821456558', // test ca-app-pub-3940256099942544/6300978111
+    adUnitId:
+        'ca-app-pub-8941566736607757/3821456558', // test ca-app-pub-3940256099942544/6300978111
     size: AdSize.banner,
     request: AdRequest(),
     listener: BannerAdListener(
       // Called when an ad is successfully received.
       onAdLoaded: (Ad ad) => print('Ad loaded.'),
       // Called when an ad request failed.
+
       onAdFailedToLoad: (Ad ad, LoadAdError error) {
         // Dispose the ad here to free resources.
         ad.dispose();
@@ -49,8 +51,16 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     // TODO: implement initState
-    myBanner.dispose();
+    // myBanner.dispose();
     myBanner.load();
+  }
+
+// dispose method alternative for 54 line
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
   }
 
   @override
