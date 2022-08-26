@@ -20,7 +20,6 @@ class _KitState extends State<Kit> {
   void initState() {
     createRewardedAd();
     // WE CALL IT ON INITSTATE TO AVOID THE MULTIPLE CLICK ON THE BUTTON TO INIT CREATE REWARDED AD
-    // TODO: implement initState
     super.initState();
   }
 
@@ -50,7 +49,7 @@ class _KitState extends State<Kit> {
 
   showRewarderAD() {
     // createRewardedAd();
-    _rewardedAD!.fullScreenContentCallback = FullScreenContentCallback(
+    _rewardedAD?.fullScreenContentCallback = FullScreenContentCallback(
       onAdShowedFullScreenContent: (RewardedAd ad) =>
           print('$ad onAdShowedFullScreenContent.'),
       onAdDismissedFullScreenContent: (RewardedAd ad) {

@@ -62,7 +62,6 @@ class _KitPageState extends State<KitPage> {
   @override
   void initState() {
     myInterstitialAd;
-    // TODO: implement initState
     super.initState();
   }
 
