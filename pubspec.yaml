@@ -32,6 +32,7 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
+  # need to use flat icon for play store
   cupertino_icons: ^1.0.2
   url_launcher: ^6.0.20
   google_mobile_ads: ^2.0.1
