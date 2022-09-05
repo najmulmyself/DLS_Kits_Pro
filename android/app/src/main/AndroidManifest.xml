@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sakibpro.dlskits">
+    package="com.sakib.dreamkit">
     <!-- here -->
     <!-- <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/> -->
     <!-- <queries>
@@ -18,7 +18,7 @@
     </queries> -->
     <!-- heres -->
    <application
-        android:label="DLS Kits Pro"
+        android:label="Dream Kits 22"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity

@@ -1,4 +1,4 @@
-package com.sakibpro.dlskits
+package com.sakib.dreamkit
 
 import io.flutter.embedding.android.FlutterActivity
 
