@@ -1,9 +1,35 @@
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 import 'kit_page.dart';
 
-class NationalKits extends StatelessWidget {
+class NationalKits extends StatefulWidget {
   const NationalKits({Key? key}) : super(key: key);
+
+  @override
+  State<NationalKits> createState() => _NationalKitsState();
+}
+
+class _NationalKitsState extends State<NationalKits> {
+  final Future<void> myInterstitialAd = InterstitialAd.load(
+      adUnitId: 'ca-app-pub-8941566736607757/9232693198',
+      request: AdRequest(),
+      adLoadCallback: InterstitialAdLoadCallback(
+        onAdLoaded: (InterstitialAd ad) {
+          // Keep a reference to the ad so you can show it later.
+          // this._interstitialAd = ad;
+          ad.show();
+        },
+        onAdFailedToLoad: (LoadAdError error) {
+          print('InterstitialAd failed to load: $error');
+        },
+      ));
+  @override
+  void initState() {
+    // TODO: implement initState
+    myInterstitialAd;  // INTESTITIAL AD SHOWN HERE
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -183,9 +209,11 @@ class NationalKits extends StatelessWidget {
                         builder: (ctx) => KitPage(
                           logo: "https://i.ibb.co/3WMNKDK/Hassan360-Logo.png",
                           homeKit: "Home Kit",
-                          homeKitI: "https://i.ibb.co/ZKZLkLw/Hassan360-Kit.png",
+                          homeKitI:
+                              "https://i.ibb.co/ZKZLkLw/Hassan360-Kit.png",
                           awayKit: "Away Kit",
-                          awayKitI: "https://i.ibb.co/Jj0QdtL/Hassan360-Kit.png",
+                          awayKitI:
+                              "https://i.ibb.co/Jj0QdtL/Hassan360-Kit.png",
                           thirdKit: "Third Kit",
                           thirdKitI:
                               "https://i.ibb.co/g4Qdjtn/20220704-011843.png",

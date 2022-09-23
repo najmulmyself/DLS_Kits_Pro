@@ -1,14 +1,40 @@
 import 'package:dls_kits_pro/widgets/club_teams/la_liga.dart';
 import 'package:dls_kits_pro/widgets/club_teams/ligue1.dart';
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 import 'club_teams/bundesliga.dart';
 import 'club_teams/others_club.dart';
 import 'club_teams/premier_league.dart';
 import 'club_teams/serie_a.dart';
 
-class ClubTeam extends StatelessWidget {
+class ClubTeam extends StatefulWidget {
   const ClubTeam({Key? key}) : super(key: key);
+
+  @override
+  State<ClubTeam> createState() => _ClubTeamState();
+}
+
+class _ClubTeamState extends State<ClubTeam> {
+  final Future<void> myInterstitialAd = InterstitialAd.load(
+      adUnitId: 'ca-app-pub-8941566736607757/9232693198',
+      request: AdRequest(),
+      adLoadCallback: InterstitialAdLoadCallback(
+        onAdLoaded: (InterstitialAd ad) {
+          // Keep a reference to the ad so you can show it later.
+          // this._interstitialAd = ad;
+          ad.show();
+        },
+        onAdFailedToLoad: (LoadAdError error) {
+          print('InterstitialAd failed to load: $error');
+        },
+      ));
+  @override
+  void initState() {
+    // TODO: implement initState
+    myInterstitialAd;
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
