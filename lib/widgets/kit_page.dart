@@ -63,8 +63,60 @@ class _KitPageState extends State<KitPage> {
       ));
   @override
   void initState() {
-    myInterstitialAd;
+    // myInterstitialAd;  // dont want to show intersitial ad here
+    createRewardedAd();
     super.initState();
+  }
+// REWARDED AD GOES HERE
+
+  RewardedAd? _rewardedAD;
+
+  void createRewardedAd() {
+    // showRewarderAD();
+    RewardedAd.load(
+        adUnitId:
+            'ca-app-pub-8941566736607757/4843919251', //test ad 'ca-app-pub-3940256099942544/5224354917',
+        request: AdRequest(),
+        rewardedAdLoadCallback: RewardedAdLoadCallback(
+          onAdLoaded: (RewardedAd ad) {
+            print('$ad loaded.');
+            // Keep a reference to the ad so you can show it later.
+            // this._rewardedAd = ad;
+            // ad.show(onUserEarnedReward: null)
+            setState(() {
+              _rewardedAD = ad;
+            });
+          },
+          onAdFailedToLoad: (LoadAdError error) {
+            print('RewardedAd failed to load: $error');
+          },
+        ));
+  }
+
+  showRewarderAD() {
+    // createRewardedAd();
+    _rewardedAD?.fullScreenContentCallback = FullScreenContentCallback(
+      onAdShowedFullScreenContent: (RewardedAd ad) =>
+          print('$ad onAdShowedFullScreenContent.'),
+      onAdDismissedFullScreenContent: (RewardedAd ad) {
+        print('$ad onAdDismissedFullScreenContent.');
+        ad.dispose();
+        createRewardedAd();
+      },
+      onAdFailedToShowFullScreenContent: (RewardedAd ad, AdError error) {
+        print('$ad onAdFailedToShowFullScreenContent: $error');
+        ad.dispose();
+        createRewardedAd();
+      },
+      onAdImpression: (RewardedAd ad) => print('$ad impression occurred.'),
+    );
+    _rewardedAD!.show(
+      onUserEarnedReward: (ad, reward) {
+        print('You earned $reward');
+        ad.dispose();
+        createRewardedAd();
+      },
+    );
   }
 
   @override

@@ -140,8 +140,8 @@ class _KitState extends State<Kit> {
                 // GO TO INIT STATE TO AVOID THE MULTIPLE CLICK ON THE BUTTON TO INIT CREATE REWARDED AD
 
                 print('before ad loaded');
-                createRewardedAd();
-                showRewarderAD();
+                // createRewardedAd(); // dont want to show ad when click copy url
+                // showRewarderAD();
                 // }));
                 Clipboard.setData(
                   ClipboardData(text: widget.urlText),
