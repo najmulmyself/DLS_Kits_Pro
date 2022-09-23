@@ -45,6 +45,8 @@ class KitPage extends StatefulWidget {
   State<KitPage> createState() => _KitPageState();
 }
 
+// need to change this page to rewarded video ad
+
 class _KitPageState extends State<KitPage> {
   final Future<void> myInterstitialAd = InterstitialAd.load(
       adUnitId: 'ca-app-pub-8941566736607757/9232693198',
