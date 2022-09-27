@@ -16,7 +16,7 @@ class _NationalKitsState extends State<NationalKits> {
       request: AdRequest(),
       adLoadCallback: InterstitialAdLoadCallback(
         onAdLoaded: (InterstitialAd ad) {
-          // Keep a reference to the ad so you can show it later.
+          // Keep a reference to the ad so you can show it later. | need to publish now on
           // this._interstitialAd = ad;
           ad.show();
         },
