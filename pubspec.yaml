@@ -41,6 +41,7 @@ dependencies:
   google_fonts: ^3.0.1
   change_app_package_name: ^1.1.0
   new_version_plus: ^0.0.3
+  upgrader: ^4.6.1
 
 dev_dependencies:
   flutter_test:
