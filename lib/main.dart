@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:new_version/new_version.dart';
+// import 'package:new_version/new_version.dart';
+import 'package:new_version_plus/new_version_plus.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,7 +25,7 @@ class _MyAppState extends State<MyApp> {
   }
 
   Future<VersionStatus>? checkVersion() async {
-    final newVersion = await NewVersion(
+    final newVersion = NewVersionPlus(
       androidId: 'com.snapchat.android',
       // iOSId: 'com.dlskitspro',
     );
@@ -40,7 +41,7 @@ class _MyAppState extends State<MyApp> {
       },
       dialogText: "Please update the app to continue using it.",
     );
-    throw UnimplementedError();
+    throw UnimplementedError('error happend');
   }
 
   @override
