@@ -5,6 +5,7 @@ import 'dart:async';
 import 'package:dls_kits_pro/widgets/club_team.dart';
 import 'package:dls_kits_pro/widgets/national_kits.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:new_version/new_version.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -56,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
     // myBanner.dispose();
     myBanner.load();
     final newVersion = NewVersion(
-      androidId: 'com.snapchat.android',
+      androidId: 'com.sakib.dreamkit',
       // iOSId: 'com.dlskitspro',
     );
 
@@ -75,7 +76,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
 
 
-  ///////////////////////////////////////////
+  //////////////////  UPDATE  /////////////////////////
 
   Future checkVersion(NewVersion newVersion) async {
     final status = await newVersion.getVersionStatus();
@@ -91,11 +92,11 @@ class _HomeScreenState extends State<HomeScreen> {
           context: context,
           versionStatus: status,
           dialogTitle: "Update Available",
-          dismissButtonText: "Skip",
+          dismissButtonText: "Exit",
           dismissAction: () {
-            // SystemNavigator.pop();
+            SystemNavigator.pop();
           },
-          dialogText: "Please update the app to continue using it.",
+          dialogText: "🔥!!!New Version!!!🔥\n \n🔥Reduced AD \n \n Please update the app from play store",
         );
         print('hello 3');
       }
