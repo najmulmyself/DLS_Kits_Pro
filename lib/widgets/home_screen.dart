@@ -1,9 +1,12 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'dart:async';
+
 import 'package:dls_kits_pro/widgets/club_team.dart';
 import 'package:dls_kits_pro/widgets/national_kits.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:new_version/new_version.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 // import 'kit_page.dart';
@@ -52,6 +55,14 @@ class _HomeScreenState extends State<HomeScreen> {
   void initState() {
     // myBanner.dispose();
     myBanner.load();
+    final newVersion = NewVersion(
+      androidId: 'com.snapchat.android',
+      // iOSId: 'com.dlskitspro',
+    );
+
+    Timer(Duration(milliseconds: 800), () {
+      checkVersion(newVersion);
+    });
   }
 
 // dispose method alternative for 54 line
@@ -61,6 +72,37 @@ class _HomeScreenState extends State<HomeScreen> {
     // 
     super.dispose();
   }
+
+
+
+  ///////////////////////////////////////////
+
+  Future checkVersion(NewVersion newVersion) async {
+    final status = await newVersion.getVersionStatus();
+    print(status?.appStoreLink);
+    print(status?.localVersion);
+    print(status?.storeVersion);
+    if (status != null) {
+      print('hello 1');
+      if (status.canUpdate) {
+      print('hello 2');
+        newVersion.showUpdateDialog(
+          
+          context: context,
+          versionStatus: status,
+          dialogTitle: "Update Available",
+          dismissButtonText: "Skip",
+          dismissAction: () {
+            // SystemNavigator.pop();
+          },
+          dialogText: "Please update the app to continue using it.",
+        );
+        print('hello 3');
+      }
+    }
+    // throw UnimplementedError();
+  }
+  ///////////////////////////////////////////
 
   @override
   Widget build(BuildContext context) {
